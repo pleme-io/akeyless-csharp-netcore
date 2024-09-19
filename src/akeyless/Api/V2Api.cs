@@ -4873,6 +4873,26 @@ namespace akeyless.Api
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>BastionConfigReplyObj</returns>
+        BastionConfigReplyObj GatewayGetRemoteAccess(GatewayGetRemoteAccess body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of BastionConfigReplyObj</returns>
+        ApiResponse<BastionConfigReplyObj> GatewayGetRemoteAccessWithHttpInfo(GatewayGetRemoteAccess body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;TmpUserData&gt;</returns>
         List<TmpUserData> GatewayGetTmpUsers(GatewayGetTmpUsers body, int operationIndex = 0);
 
@@ -5971,6 +5991,44 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        Object GatewayUpdateRemoteAccess(int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> GatewayUpdateRemoteAccessWithHttpInfo(int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        Object GatewayUpdateRemoteAccessRdpRecordings(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> GatewayUpdateRemoteAccessRdpRecordingsWithHttpInfo(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>GatewayUpdateTlsCertOutput</returns>
@@ -6405,6 +6463,226 @@ namespace akeyless.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of GetTargetDetailsOutput</returns>
         ApiResponse<GetTargetDetailsOutput> GetTargetDetailsWithHttpInfo(GetTargetDetails body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsAwsS3(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAwsS3WithHttpInfo(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsAzureAnalytics(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAzureAnalyticsWithHttpInfo(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsDatadog(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsDatadogWithHttpInfo(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsElasticsearch(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsElasticsearchWithHttpInfo(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsGoogleChronicle(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsGoogleChronicleWithHttpInfo(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsLogstash(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogstashWithHttpInfo(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsLogzIo(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogzIoWithHttpInfo(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsSplunk(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSplunkWithHttpInfo(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsStdout(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsStdoutWithHttpInfo(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsSumologic(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSumologicWithHttpInfo(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsSyslog(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSyslogWithHttpInfo(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -16850,6 +17128,31 @@ namespace akeyless.Api
         /// <param name="body"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of BastionConfigReplyObj</returns>
+        System.Threading.Tasks.Task<BastionConfigReplyObj> GatewayGetRemoteAccessAsync(GatewayGetRemoteAccess body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (BastionConfigReplyObj)</returns>
+        System.Threading.Tasks.Task<ApiResponse<BastionConfigReplyObj>> GatewayGetRemoteAccessWithHttpInfoAsync(GatewayGetRemoteAccess body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of List&lt;TmpUserData&gt;</returns>
         System.Threading.Tasks.Task<List<TmpUserData>> GatewayGetTmpUsersAsync(GatewayGetTmpUsers body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
@@ -18222,6 +18525,54 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> GatewayUpdateRemoteAccessAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> GatewayUpdateRemoteAccessWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> GatewayUpdateRemoteAccessRdpRecordingsAsync(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> GatewayUpdateRemoteAccessRdpRecordingsWithHttpInfoAsync(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -18763,6 +19114,281 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetTargetDetailsOutput)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetTargetDetailsOutput>> GetTargetDetailsWithHttpInfoAsync(GetTargetDetails body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAwsS3Async(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsAwsS3WithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAzureAnalyticsAsync(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsAzureAnalyticsWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsDatadogAsync(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsDatadogWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsElasticsearchAsync(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsElasticsearchWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsGoogleChronicleAsync(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsGoogleChronicleWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogstashAsync(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsLogstashWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogzIoAsync(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsLogzIoWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSplunkAsync(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsSplunkWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsStdoutAsync(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsStdoutWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSumologicAsync(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsSumologicWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSyslogAsync(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsSyslogWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -24412,7 +25038,7 @@ namespace akeyless.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/alias-details", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<Object>("/alias-details", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("AliasDetails", localVarResponse);
@@ -24486,7 +25112,7 @@ namespace akeyless.Api
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/alias-details", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/alias-details", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -59652,6 +60278,152 @@ namespace akeyless.Api
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>BastionConfigReplyObj</returns>
+        public BastionConfigReplyObj GatewayGetRemoteAccess(GatewayGetRemoteAccess body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<BastionConfigReplyObj> localVarResponse = GatewayGetRemoteAccessWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of BastionConfigReplyObj</returns>
+        public akeyless.Client.ApiResponse<BastionConfigReplyObj> GatewayGetRemoteAccessWithHttpInfo(GatewayGetRemoteAccess body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GatewayGetRemoteAccess");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GatewayGetRemoteAccess";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<BastionConfigReplyObj>("/gateway-get-remote-access", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GatewayGetRemoteAccess", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of BastionConfigReplyObj</returns>
+        public async System.Threading.Tasks.Task<BastionConfigReplyObj> GatewayGetRemoteAccessAsync(GatewayGetRemoteAccess body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<BastionConfigReplyObj> localVarResponse = await GatewayGetRemoteAccessWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (BastionConfigReplyObj)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<BastionConfigReplyObj>> GatewayGetRemoteAccessWithHttpInfoAsync(GatewayGetRemoteAccess body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GatewayGetRemoteAccess");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GatewayGetRemoteAccess";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<BastionConfigReplyObj>("/gateway-get-remote-access", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GatewayGetRemoteAccess", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>List&lt;TmpUserData&gt;</returns>
         public List<TmpUserData> GatewayGetTmpUsers(GatewayGetTmpUsers body, int operationIndex = 0)
         {
@@ -67654,6 +68426,278 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        public Object GatewayUpdateRemoteAccess(int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = GatewayUpdateRemoteAccessWithHttpInfo();
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        public akeyless.Client.ApiResponse<Object> GatewayUpdateRemoteAccessWithHttpInfo(int operationIndex = 0)
+        {
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+
+            localVarRequestOptions.Operation = "V2Api.GatewayUpdateRemoteAccess";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/gateway-update-remote-access", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GatewayUpdateRemoteAccess", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> GatewayUpdateRemoteAccessAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = await GatewayUpdateRemoteAccessWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<Object>> GatewayUpdateRemoteAccessWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+
+            localVarRequestOptions.Operation = "V2Api.GatewayUpdateRemoteAccess";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/gateway-update-remote-access", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GatewayUpdateRemoteAccess", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        public Object GatewayUpdateRemoteAccessRdpRecordings(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = GatewayUpdateRemoteAccessRdpRecordingsWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        public akeyless.Client.ApiResponse<Object> GatewayUpdateRemoteAccessRdpRecordingsWithHttpInfo(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GatewayUpdateRemoteAccessRdpRecordings");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GatewayUpdateRemoteAccessRdpRecordings";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/gateway-update-remote-access-rdp-recording", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GatewayUpdateRemoteAccessRdpRecordings", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> GatewayUpdateRemoteAccessRdpRecordingsAsync(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = await GatewayUpdateRemoteAccessRdpRecordingsWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<Object>> GatewayUpdateRemoteAccessRdpRecordingsWithHttpInfoAsync(GatewayUpdateRemoteAccessRdpRecordings body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GatewayUpdateRemoteAccessRdpRecordings");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GatewayUpdateRemoteAccessRdpRecordings";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/gateway-update-remote-access-rdp-recording", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GatewayUpdateRemoteAccessRdpRecordings", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="body"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>GatewayUpdateTlsCertOutput</returns>
@@ -70831,6 +71875,1612 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("GetTargetDetails", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsAwsS3(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsAwsS3WithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAwsS3WithHttpInfo(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsAwsS3");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsAwsS3";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-aws-s3", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsAwsS3", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAwsS3Async(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsAwsS3WithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsAwsS3WithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsAwsS3 body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsAwsS3");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsAwsS3";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-aws-s3", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsAwsS3", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsAzureAnalytics(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsAzureAnalyticsWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAzureAnalyticsWithHttpInfo(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsAzureAnalytics");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsAzureAnalytics";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-azure-analytics", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsAzureAnalytics", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsAzureAnalyticsAsync(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsAzureAnalyticsWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsAzureAnalyticsWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsAzureAnalytics body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsAzureAnalytics");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsAzureAnalytics";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-azure-analytics", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsAzureAnalytics", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsDatadog(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsDatadogWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsDatadogWithHttpInfo(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsDatadog");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsDatadog";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-datadog", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsDatadog", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsDatadogAsync(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsDatadogWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsDatadogWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsDatadog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsDatadog");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsDatadog";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-datadog", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsDatadog", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsElasticsearch(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsElasticsearchWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsElasticsearchWithHttpInfo(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsElasticsearch");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsElasticsearch";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-elasticsearch", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsElasticsearch", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsElasticsearchAsync(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsElasticsearchWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsElasticsearchWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsElasticsearch body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsElasticsearch");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsElasticsearch";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-elasticsearch", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsElasticsearch", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsGoogleChronicle(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsGoogleChronicleWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsGoogleChronicleWithHttpInfo(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsGoogleChronicle");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsGoogleChronicle";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-google-chronicle", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsGoogleChronicle", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsGoogleChronicleAsync(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsGoogleChronicleWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsGoogleChronicleWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsGoogleChronicle body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsGoogleChronicle");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsGoogleChronicle";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-google-chronicle", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsGoogleChronicle", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsLogstash(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsLogstashWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogstashWithHttpInfo(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsLogstash");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsLogstash";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-logstash", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsLogstash", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogstashAsync(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsLogstashWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsLogstashWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsLogstash body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsLogstash");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsLogstash";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-logstash", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsLogstash", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsLogzIo(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsLogzIoWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogzIoWithHttpInfo(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsLogzIo");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsLogzIo";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-logz-io", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsLogzIo", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsLogzIoAsync(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsLogzIoWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsLogzIoWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsLogzIo body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsLogzIo");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsLogzIo";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-logz-io", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsLogzIo", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsSplunk(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsSplunkWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSplunkWithHttpInfo(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsSplunk");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsSplunk";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-splunk", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsSplunk", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSplunkAsync(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsSplunkWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsSplunkWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsSplunk body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsSplunk");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsSplunk";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-splunk", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsSplunk", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsStdout(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsStdoutWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsStdoutWithHttpInfo(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsStdout");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsStdout";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-stdout", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsStdout", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsStdoutAsync(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsStdoutWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsStdoutWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsStdout body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsStdout");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsStdout";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-stdout", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsStdout", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsSumologic(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsSumologicWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSumologicWithHttpInfo(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsSumologic");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsSumologic";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-sumologic", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsSumologic", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSumologicAsync(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsSumologicWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsSumologicWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsSumologic body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsSumologic");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsSumologic";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-sumologic", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsSumologic", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GatewayUpdateLogForwardingOutput</returns>
+        public GatewayUpdateLogForwardingOutput GwUpdateRemoteAccessSessionLogsSyslog(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = GwUpdateRemoteAccessSessionLogsSyslogWithHttpInfo(body);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GatewayUpdateLogForwardingOutput</returns>
+        public akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSyslogWithHttpInfo(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsSyslog");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsSyslog";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-syslog", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsSyslog", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GatewayUpdateLogForwardingOutput</returns>
+        public async System.Threading.Tasks.Task<GatewayUpdateLogForwardingOutput> GwUpdateRemoteAccessSessionLogsSyslogAsync(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput> localVarResponse = await GwUpdateRemoteAccessSessionLogsSyslogWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GatewayUpdateLogForwardingOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GatewayUpdateLogForwardingOutput>> GwUpdateRemoteAccessSessionLogsSyslogWithHttpInfoAsync(GwUpdateRemoteAccessSessionLogsSyslog body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'body' is set
+            if (body == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'body' when calling V2Api->GwUpdateRemoteAccessSessionLogsSyslog");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = body;
+
+            localVarRequestOptions.Operation = "V2Api.GwUpdateRemoteAccessSessionLogsSyslog";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GatewayUpdateLogForwardingOutput>("/gateway-update-remote-access-session-forwarding-syslog", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GwUpdateRemoteAccessSessionLogsSyslog", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
