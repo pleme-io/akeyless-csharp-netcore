@@ -27,52 +27,65 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// UpdateClassicKeyCertificate is a command that updates the certificate for a classic key
+    /// deactivateAcmeAccount is a command that Deactivates \\ Deletes an acme external account
     /// </summary>
-    [DataContract(Name = "UpdateClassicKeyCertificate")]
-    public partial class UpdateClassicKeyCertificate : IEquatable<UpdateClassicKeyCertificate>, IValidatableObject
+    [DataContract(Name = "deactivateAcmeAccount")]
+    public partial class DeactivateAcmeAccount : IEquatable<DeactivateAcmeAccount>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateClassicKeyCertificate" /> class.
+        /// Initializes a new instance of the <see cref="DeactivateAcmeAccount" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected UpdateClassicKeyCertificate() { }
+        protected DeactivateAcmeAccount() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateClassicKeyCertificate" /> class.
+        /// Initializes a new instance of the <see cref="DeactivateAcmeAccount" /> class.
         /// </summary>
-        /// <param name="certFileData">PEM Certificate in a Base64 format. Used for updating RSA keys&#39; certificates..</param>
-        /// <param name="certificateFormat">certificateFormat.</param>
+        /// <param name="acmeAccountId">The acme account id to deactivate (required).</param>
+        /// <param name="certIssuerName">The name of the PKI certificate issuer (required).</param>
+        /// <param name="deleteAccount">Delete the account.</param>
         /// <param name="json">Set output format to JSON (default to false).</param>
-        /// <param name="name">ClassicKey name (required).</param>
         /// <param name="token">Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;).</param>
         /// <param name="uidToken">The universal identity token, Required only for universal_identity authentication.</param>
-        public UpdateClassicKeyCertificate(string certFileData = default(string), string certificateFormat = default(string), bool json = false, string name = default(string), string token = default(string), string uidToken = default(string))
+        public DeactivateAcmeAccount(string acmeAccountId = default(string), string certIssuerName = default(string), bool deleteAccount = default(bool), bool json = false, string token = default(string), string uidToken = default(string))
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
+            // to ensure "acmeAccountId" is required (not null)
+            if (acmeAccountId == null)
             {
-                throw new ArgumentNullException("name is a required property for UpdateClassicKeyCertificate and cannot be null");
+                throw new ArgumentNullException("acmeAccountId is a required property for DeactivateAcmeAccount and cannot be null");
             }
-            this.Name = name;
-            this.CertFileData = certFileData;
-            this.CertificateFormat = certificateFormat;
+            this.AcmeAccountId = acmeAccountId;
+            // to ensure "certIssuerName" is required (not null)
+            if (certIssuerName == null)
+            {
+                throw new ArgumentNullException("certIssuerName is a required property for DeactivateAcmeAccount and cannot be null");
+            }
+            this.CertIssuerName = certIssuerName;
+            this.DeleteAccount = deleteAccount;
             this.Json = json;
             this.Token = token;
             this.UidToken = uidToken;
         }
 
         /// <summary>
-        /// PEM Certificate in a Base64 format. Used for updating RSA keys&#39; certificates.
+        /// The acme account id to deactivate
         /// </summary>
-        /// <value>PEM Certificate in a Base64 format. Used for updating RSA keys&#39; certificates.</value>
-        [DataMember(Name = "cert-file-data", EmitDefaultValue = false)]
-        public string CertFileData { get; set; }
+        /// <value>The acme account id to deactivate</value>
+        [DataMember(Name = "acme-account-id", IsRequired = true, EmitDefaultValue = true)]
+        public string AcmeAccountId { get; set; }
 
         /// <summary>
-        /// Gets or Sets CertificateFormat
+        /// The name of the PKI certificate issuer
         /// </summary>
-        [DataMember(Name = "certificate-format", EmitDefaultValue = false)]
-        public string CertificateFormat { get; set; }
+        /// <value>The name of the PKI certificate issuer</value>
+        [DataMember(Name = "cert-issuer-name", IsRequired = true, EmitDefaultValue = true)]
+        public string CertIssuerName { get; set; }
+
+        /// <summary>
+        /// Delete the account
+        /// </summary>
+        /// <value>Delete the account</value>
+        [DataMember(Name = "delete-account", EmitDefaultValue = true)]
+        public bool DeleteAccount { get; set; }
 
         /// <summary>
         /// Set output format to JSON
@@ -80,13 +93,6 @@ namespace akeyless.Model
         /// <value>Set output format to JSON</value>
         [DataMember(Name = "json", EmitDefaultValue = true)]
         public bool Json { get; set; }
-
-        /// <summary>
-        /// ClassicKey name
-        /// </summary>
-        /// <value>ClassicKey name</value>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
-        public string Name { get; set; }
 
         /// <summary>
         /// Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;)
@@ -109,11 +115,11 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class UpdateClassicKeyCertificate {\n");
-            sb.Append("  CertFileData: ").Append(CertFileData).Append("\n");
-            sb.Append("  CertificateFormat: ").Append(CertificateFormat).Append("\n");
+            sb.Append("class DeactivateAcmeAccount {\n");
+            sb.Append("  AcmeAccountId: ").Append(AcmeAccountId).Append("\n");
+            sb.Append("  CertIssuerName: ").Append(CertIssuerName).Append("\n");
+            sb.Append("  DeleteAccount: ").Append(DeleteAccount).Append("\n");
             sb.Append("  Json: ").Append(Json).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Token: ").Append(Token).Append("\n");
             sb.Append("  UidToken: ").Append(UidToken).Append("\n");
             sb.Append("}\n");
@@ -136,15 +142,15 @@ namespace akeyless.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as UpdateClassicKeyCertificate);
+            return this.Equals(input as DeactivateAcmeAccount);
         }
 
         /// <summary>
-        /// Returns true if UpdateClassicKeyCertificate instances are equal
+        /// Returns true if DeactivateAcmeAccount instances are equal
         /// </summary>
-        /// <param name="input">Instance of UpdateClassicKeyCertificate to be compared</param>
+        /// <param name="input">Instance of DeactivateAcmeAccount to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(UpdateClassicKeyCertificate input)
+        public bool Equals(DeactivateAcmeAccount input)
         {
             if (input == null)
             {
@@ -152,23 +158,22 @@ namespace akeyless.Model
             }
             return 
                 (
-                    this.CertFileData == input.CertFileData ||
-                    (this.CertFileData != null &&
-                    this.CertFileData.Equals(input.CertFileData))
+                    this.AcmeAccountId == input.AcmeAccountId ||
+                    (this.AcmeAccountId != null &&
+                    this.AcmeAccountId.Equals(input.AcmeAccountId))
                 ) && 
                 (
-                    this.CertificateFormat == input.CertificateFormat ||
-                    (this.CertificateFormat != null &&
-                    this.CertificateFormat.Equals(input.CertificateFormat))
+                    this.CertIssuerName == input.CertIssuerName ||
+                    (this.CertIssuerName != null &&
+                    this.CertIssuerName.Equals(input.CertIssuerName))
+                ) && 
+                (
+                    this.DeleteAccount == input.DeleteAccount ||
+                    this.DeleteAccount.Equals(input.DeleteAccount)
                 ) && 
                 (
                     this.Json == input.Json ||
                     this.Json.Equals(input.Json)
-                ) && 
-                (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
                 ) && 
                 (
                     this.Token == input.Token ||
@@ -191,19 +196,16 @@ namespace akeyless.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.CertFileData != null)
+                if (this.AcmeAccountId != null)
                 {
-                    hashCode = (hashCode * 59) + this.CertFileData.GetHashCode();
+                    hashCode = (hashCode * 59) + this.AcmeAccountId.GetHashCode();
                 }
-                if (this.CertificateFormat != null)
+                if (this.CertIssuerName != null)
                 {
-                    hashCode = (hashCode * 59) + this.CertificateFormat.GetHashCode();
+                    hashCode = (hashCode * 59) + this.CertIssuerName.GetHashCode();
                 }
+                hashCode = (hashCode * 59) + this.DeleteAccount.GetHashCode();
                 hashCode = (hashCode * 59) + this.Json.GetHashCode();
-                if (this.Name != null)
-                {
-                    hashCode = (hashCode * 59) + this.Name.GetHashCode();
-                }
                 if (this.Token != null)
                 {
                     hashCode = (hashCode * 59) + this.Token.GetHashCode();

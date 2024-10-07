@@ -27,52 +27,49 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// UpdateClassicKeyCertificate is a command that updates the certificate for a classic key
+    /// ChangeAdminAccountPassword
     /// </summary>
-    [DataContract(Name = "UpdateClassicKeyCertificate")]
-    public partial class UpdateClassicKeyCertificate : IEquatable<UpdateClassicKeyCertificate>, IValidatableObject
+    [DataContract(Name = "changeAdminAccountPassword")]
+    public partial class ChangeAdminAccountPassword : IEquatable<ChangeAdminAccountPassword>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateClassicKeyCertificate" /> class.
+        /// Initializes a new instance of the <see cref="ChangeAdminAccountPassword" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected UpdateClassicKeyCertificate() { }
+        protected ChangeAdminAccountPassword() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateClassicKeyCertificate" /> class.
+        /// Initializes a new instance of the <see cref="ChangeAdminAccountPassword" /> class.
         /// </summary>
-        /// <param name="certFileData">PEM Certificate in a Base64 format. Used for updating RSA keys&#39; certificates..</param>
-        /// <param name="certificateFormat">certificateFormat.</param>
+        /// <param name="currentPassword">Current password (required).</param>
         /// <param name="json">Set output format to JSON (default to false).</param>
-        /// <param name="name">ClassicKey name (required).</param>
+        /// <param name="newPassword">New password (required).</param>
         /// <param name="token">Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;).</param>
         /// <param name="uidToken">The universal identity token, Required only for universal_identity authentication.</param>
-        public UpdateClassicKeyCertificate(string certFileData = default(string), string certificateFormat = default(string), bool json = false, string name = default(string), string token = default(string), string uidToken = default(string))
+        public ChangeAdminAccountPassword(string currentPassword = default(string), bool json = false, string newPassword = default(string), string token = default(string), string uidToken = default(string))
         {
-            // to ensure "name" is required (not null)
-            if (name == null)
+            // to ensure "currentPassword" is required (not null)
+            if (currentPassword == null)
             {
-                throw new ArgumentNullException("name is a required property for UpdateClassicKeyCertificate and cannot be null");
+                throw new ArgumentNullException("currentPassword is a required property for ChangeAdminAccountPassword and cannot be null");
             }
-            this.Name = name;
-            this.CertFileData = certFileData;
-            this.CertificateFormat = certificateFormat;
+            this.CurrentPassword = currentPassword;
+            // to ensure "newPassword" is required (not null)
+            if (newPassword == null)
+            {
+                throw new ArgumentNullException("newPassword is a required property for ChangeAdminAccountPassword and cannot be null");
+            }
+            this.NewPassword = newPassword;
             this.Json = json;
             this.Token = token;
             this.UidToken = uidToken;
         }
 
         /// <summary>
-        /// PEM Certificate in a Base64 format. Used for updating RSA keys&#39; certificates.
+        /// Current password
         /// </summary>
-        /// <value>PEM Certificate in a Base64 format. Used for updating RSA keys&#39; certificates.</value>
-        [DataMember(Name = "cert-file-data", EmitDefaultValue = false)]
-        public string CertFileData { get; set; }
-
-        /// <summary>
-        /// Gets or Sets CertificateFormat
-        /// </summary>
-        [DataMember(Name = "certificate-format", EmitDefaultValue = false)]
-        public string CertificateFormat { get; set; }
+        /// <value>Current password</value>
+        [DataMember(Name = "current-password", IsRequired = true, EmitDefaultValue = true)]
+        public string CurrentPassword { get; set; }
 
         /// <summary>
         /// Set output format to JSON
@@ -82,11 +79,11 @@ namespace akeyless.Model
         public bool Json { get; set; }
 
         /// <summary>
-        /// ClassicKey name
+        /// New password
         /// </summary>
-        /// <value>ClassicKey name</value>
-        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
-        public string Name { get; set; }
+        /// <value>New password</value>
+        [DataMember(Name = "new-password", IsRequired = true, EmitDefaultValue = true)]
+        public string NewPassword { get; set; }
 
         /// <summary>
         /// Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;)
@@ -109,11 +106,10 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class UpdateClassicKeyCertificate {\n");
-            sb.Append("  CertFileData: ").Append(CertFileData).Append("\n");
-            sb.Append("  CertificateFormat: ").Append(CertificateFormat).Append("\n");
+            sb.Append("class ChangeAdminAccountPassword {\n");
+            sb.Append("  CurrentPassword: ").Append(CurrentPassword).Append("\n");
             sb.Append("  Json: ").Append(Json).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  NewPassword: ").Append(NewPassword).Append("\n");
             sb.Append("  Token: ").Append(Token).Append("\n");
             sb.Append("  UidToken: ").Append(UidToken).Append("\n");
             sb.Append("}\n");
@@ -136,15 +132,15 @@ namespace akeyless.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as UpdateClassicKeyCertificate);
+            return this.Equals(input as ChangeAdminAccountPassword);
         }
 
         /// <summary>
-        /// Returns true if UpdateClassicKeyCertificate instances are equal
+        /// Returns true if ChangeAdminAccountPassword instances are equal
         /// </summary>
-        /// <param name="input">Instance of UpdateClassicKeyCertificate to be compared</param>
+        /// <param name="input">Instance of ChangeAdminAccountPassword to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(UpdateClassicKeyCertificate input)
+        public bool Equals(ChangeAdminAccountPassword input)
         {
             if (input == null)
             {
@@ -152,23 +148,18 @@ namespace akeyless.Model
             }
             return 
                 (
-                    this.CertFileData == input.CertFileData ||
-                    (this.CertFileData != null &&
-                    this.CertFileData.Equals(input.CertFileData))
-                ) && 
-                (
-                    this.CertificateFormat == input.CertificateFormat ||
-                    (this.CertificateFormat != null &&
-                    this.CertificateFormat.Equals(input.CertificateFormat))
+                    this.CurrentPassword == input.CurrentPassword ||
+                    (this.CurrentPassword != null &&
+                    this.CurrentPassword.Equals(input.CurrentPassword))
                 ) && 
                 (
                     this.Json == input.Json ||
                     this.Json.Equals(input.Json)
                 ) && 
                 (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
+                    this.NewPassword == input.NewPassword ||
+                    (this.NewPassword != null &&
+                    this.NewPassword.Equals(input.NewPassword))
                 ) && 
                 (
                     this.Token == input.Token ||
@@ -191,18 +182,14 @@ namespace akeyless.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.CertFileData != null)
+                if (this.CurrentPassword != null)
                 {
-                    hashCode = (hashCode * 59) + this.CertFileData.GetHashCode();
-                }
-                if (this.CertificateFormat != null)
-                {
-                    hashCode = (hashCode * 59) + this.CertificateFormat.GetHashCode();
+                    hashCode = (hashCode * 59) + this.CurrentPassword.GetHashCode();
                 }
                 hashCode = (hashCode * 59) + this.Json.GetHashCode();
-                if (this.Name != null)
+                if (this.NewPassword != null)
                 {
-                    hashCode = (hashCode * 59) + this.Name.GetHashCode();
+                    hashCode = (hashCode * 59) + this.NewPassword.GetHashCode();
                 }
                 if (this.Token != null)
                 {
