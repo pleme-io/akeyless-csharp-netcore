@@ -27,37 +27,47 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// uscList is a command that lists the secrets of a Universal Secrets Connector
+    /// gatewayUpdateRemoteAccessDesktopApp is a command that update remote access desktop app config
     /// </summary>
-    [DataContract(Name = "uscList")]
-    public partial class UscList : IValidatableObject
+    [DataContract(Name = "gatewayUpdateRemoteAccessDesktopApp")]
+    public partial class GatewayUpdateRemoteAccessDesktopApp : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UscList" /> class.
+        /// Initializes a new instance of the <see cref="GatewayUpdateRemoteAccessDesktopApp" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected UscList() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="UscList" /> class.
-        /// </summary>
+        /// <param name="desktopAppSecureWebAccessUrl">desktopAppSecureWebAccessUrl.</param>
+        /// <param name="desktopAppSecureWebProxy">desktopAppSecureWebProxy.</param>
+        /// <param name="desktopAppSshCertIssuer">desktopAppSshCertIssuer.</param>
         /// <param name="json">Set output format to JSON (default to false).</param>
-        /// <param name="objectType">objectType.</param>
         /// <param name="token">Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;).</param>
         /// <param name="uidToken">The universal identity token, Required only for universal_identity authentication.</param>
-        /// <param name="uscName">Name of the Universal Secrets Connector item (required).</param>
-        public UscList(bool json = false, string objectType = default(string), string token = default(string), string uidToken = default(string), string uscName = default(string))
+        public GatewayUpdateRemoteAccessDesktopApp(string desktopAppSecureWebAccessUrl = default(string), string desktopAppSecureWebProxy = default(string), string desktopAppSshCertIssuer = default(string), bool json = false, string token = default(string), string uidToken = default(string))
         {
-            // to ensure "uscName" is required (not null)
-            if (uscName == null)
-            {
-                throw new ArgumentNullException("uscName is a required property for UscList and cannot be null");
-            }
-            this.UscName = uscName;
+            this.DesktopAppSecureWebAccessUrl = desktopAppSecureWebAccessUrl;
+            this.DesktopAppSecureWebProxy = desktopAppSecureWebProxy;
+            this.DesktopAppSshCertIssuer = desktopAppSshCertIssuer;
             this.Json = json;
-            this.ObjectType = objectType;
             this.Token = token;
             this.UidToken = uidToken;
         }
+
+        /// <summary>
+        /// Gets or Sets DesktopAppSecureWebAccessUrl
+        /// </summary>
+        [DataMember(Name = "desktop-app-secure-web-access-url", EmitDefaultValue = false)]
+        public string DesktopAppSecureWebAccessUrl { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DesktopAppSecureWebProxy
+        /// </summary>
+        [DataMember(Name = "desktop-app-secure-web-proxy", EmitDefaultValue = false)]
+        public string DesktopAppSecureWebProxy { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DesktopAppSshCertIssuer
+        /// </summary>
+        [DataMember(Name = "desktop-app-ssh-cert-issuer", EmitDefaultValue = false)]
+        public string DesktopAppSshCertIssuer { get; set; }
 
         /// <summary>
         /// Set output format to JSON
@@ -65,12 +75,6 @@ namespace akeyless.Model
         /// <value>Set output format to JSON</value>
         [DataMember(Name = "json", EmitDefaultValue = true)]
         public bool Json { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ObjectType
-        /// </summary>
-        [DataMember(Name = "object-type", EmitDefaultValue = false)]
-        public string ObjectType { get; set; }
 
         /// <summary>
         /// Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;)
@@ -87,25 +91,19 @@ namespace akeyless.Model
         public string UidToken { get; set; }
 
         /// <summary>
-        /// Name of the Universal Secrets Connector item
-        /// </summary>
-        /// <value>Name of the Universal Secrets Connector item</value>
-        [DataMember(Name = "usc-name", IsRequired = true, EmitDefaultValue = true)]
-        public string UscName { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class UscList {\n");
+            sb.Append("class GatewayUpdateRemoteAccessDesktopApp {\n");
+            sb.Append("  DesktopAppSecureWebAccessUrl: ").Append(DesktopAppSecureWebAccessUrl).Append("\n");
+            sb.Append("  DesktopAppSecureWebProxy: ").Append(DesktopAppSecureWebProxy).Append("\n");
+            sb.Append("  DesktopAppSshCertIssuer: ").Append(DesktopAppSshCertIssuer).Append("\n");
             sb.Append("  Json: ").Append(Json).Append("\n");
-            sb.Append("  ObjectType: ").Append(ObjectType).Append("\n");
             sb.Append("  Token: ").Append(Token).Append("\n");
             sb.Append("  UidToken: ").Append(UidToken).Append("\n");
-            sb.Append("  UscName: ").Append(UscName).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
