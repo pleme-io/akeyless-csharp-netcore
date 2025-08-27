@@ -8885,6 +8885,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetCreateOutput</returns>
+        TargetCreateOutput TargetCreateGemini(TargetCreateGemini targetCreateGemini, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetCreateOutput</returns>
+        ApiResponse<TargetCreateOutput> TargetCreateGeminiWithHttpInfo(TargetCreateGemini targetCreateGemini, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="targetCreateGithub"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>TargetCreateOutput</returns>
@@ -9081,6 +9101,26 @@ namespace akeyless.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of TargetCreateOutput</returns>
         ApiResponse<TargetCreateOutput> TargetCreateLinkedWithHttpInfo(TargetCreateLinked targetCreateLinked, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetCreateOutput</returns>
+        TargetCreateOutput TargetCreateOpenAI(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetCreateOutput</returns>
+        ApiResponse<TargetCreateOutput> TargetCreateOpenAIWithHttpInfo(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -9465,6 +9505,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetUpdateOutput</returns>
+        TargetUpdateOutput TargetUpdateGemini(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetUpdateOutput</returns>
+        ApiResponse<TargetUpdateOutput> TargetUpdateGeminiWithHttpInfo(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="targetUpdateGithub"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>TargetUpdateOutput</returns>
@@ -9661,6 +9721,26 @@ namespace akeyless.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of TargetUpdateOutput</returns>
         ApiResponse<TargetUpdateOutput> TargetUpdateLinkedWithHttpInfo(TargetUpdateLinked targetUpdateLinked, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetUpdateOutput</returns>
+        TargetUpdateOutput TargetUpdateOpenAI(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetUpdateOutput</returns>
+        ApiResponse<TargetUpdateOutput> TargetUpdateOpenAIWithHttpInfo(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -22526,6 +22606,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetCreateOutput</returns>
+        System.Threading.Tasks.Task<TargetCreateOutput> TargetCreateGeminiAsync(TargetCreateGemini targetCreateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetCreateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TargetCreateOutput>> TargetCreateGeminiWithHttpInfoAsync(TargetCreateGemini targetCreateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="targetCreateGithub"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -22769,6 +22874,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (TargetCreateOutput)</returns>
         System.Threading.Tasks.Task<ApiResponse<TargetCreateOutput>> TargetCreateLinkedWithHttpInfoAsync(TargetCreateLinked targetCreateLinked, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetCreateOutput</returns>
+        System.Threading.Tasks.Task<TargetCreateOutput> TargetCreateOpenAIAsync(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetCreateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TargetCreateOutput>> TargetCreateOpenAIWithHttpInfoAsync(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -23251,6 +23381,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetUpdateOutput</returns>
+        System.Threading.Tasks.Task<TargetUpdateOutput> TargetUpdateGeminiAsync(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetUpdateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TargetUpdateOutput>> TargetUpdateGeminiWithHttpInfoAsync(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="targetUpdateGithub"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -23494,6 +23649,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (TargetUpdateOutput)</returns>
         System.Threading.Tasks.Task<ApiResponse<TargetUpdateOutput>> TargetUpdateLinkedWithHttpInfoAsync(TargetUpdateLinked targetUpdateLinked, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetUpdateOutput</returns>
+        System.Threading.Tasks.Task<TargetUpdateOutput> TargetUpdateOpenAIAsync(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetUpdateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TargetUpdateOutput>> TargetUpdateOpenAIWithHttpInfoAsync(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -90223,6 +90403,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetCreateOutput</returns>
+        public TargetCreateOutput TargetCreateGemini(TargetCreateGemini targetCreateGemini, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<TargetCreateOutput> localVarResponse = TargetCreateGeminiWithHttpInfo(targetCreateGemini);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetCreateOutput</returns>
+        public akeyless.Client.ApiResponse<TargetCreateOutput> TargetCreateGeminiWithHttpInfo(TargetCreateGemini targetCreateGemini, int operationIndex = 0)
+        {
+            // verify the required parameter 'targetCreateGemini' is set
+            if (targetCreateGemini == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetCreateGemini' when calling V2Api->TargetCreateGemini");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetCreateGemini;
+
+            localVarRequestOptions.Operation = "V2Api.TargetCreateGemini";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<TargetCreateOutput>("/target-create-gemini", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetCreateGemini", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetCreateOutput</returns>
+        public async System.Threading.Tasks.Task<TargetCreateOutput> TargetCreateGeminiAsync(TargetCreateGemini targetCreateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<TargetCreateOutput> localVarResponse = await TargetCreateGeminiWithHttpInfoAsync(targetCreateGemini, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetCreateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<TargetCreateOutput>> TargetCreateGeminiWithHttpInfoAsync(TargetCreateGemini targetCreateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'targetCreateGemini' is set
+            if (targetCreateGemini == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetCreateGemini' when calling V2Api->TargetCreateGemini");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetCreateGemini;
+
+            localVarRequestOptions.Operation = "V2Api.TargetCreateGemini";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<TargetCreateOutput>("/target-create-gemini", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetCreateGemini", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="targetCreateGithub"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>TargetCreateOutput</returns>
@@ -91670,6 +91996,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("TargetCreateLinked", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetCreateOutput</returns>
+        public TargetCreateOutput TargetCreateOpenAI(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<TargetCreateOutput> localVarResponse = TargetCreateOpenAIWithHttpInfo(targetCreateOpenAI);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetCreateOutput</returns>
+        public akeyless.Client.ApiResponse<TargetCreateOutput> TargetCreateOpenAIWithHttpInfo(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0)
+        {
+            // verify the required parameter 'targetCreateOpenAI' is set
+            if (targetCreateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetCreateOpenAI' when calling V2Api->TargetCreateOpenAI");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetCreateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.TargetCreateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<TargetCreateOutput>("/target-create-openai", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetCreateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetCreateOutput</returns>
+        public async System.Threading.Tasks.Task<TargetCreateOutput> TargetCreateOpenAIAsync(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<TargetCreateOutput> localVarResponse = await TargetCreateOpenAIWithHttpInfoAsync(targetCreateOpenAI, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetCreateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<TargetCreateOutput>> TargetCreateOpenAIWithHttpInfoAsync(TargetCreateOpenAI targetCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'targetCreateOpenAI' is set
+            if (targetCreateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetCreateOpenAI' when calling V2Api->TargetCreateOpenAI");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetCreateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.TargetCreateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<TargetCreateOutput>("/target-create-openai", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetCreateOpenAI", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -94457,6 +94929,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetUpdateOutput</returns>
+        public TargetUpdateOutput TargetUpdateGemini(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<TargetUpdateOutput> localVarResponse = TargetUpdateGeminiWithHttpInfo(targetUpdateGemini);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetUpdateOutput</returns>
+        public akeyless.Client.ApiResponse<TargetUpdateOutput> TargetUpdateGeminiWithHttpInfo(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0)
+        {
+            // verify the required parameter 'targetUpdateGemini' is set
+            if (targetUpdateGemini == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetUpdateGemini' when calling V2Api->TargetUpdateGemini");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetUpdateGemini;
+
+            localVarRequestOptions.Operation = "V2Api.TargetUpdateGemini";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<TargetUpdateOutput>("/target-update-gemini", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetUpdateGemini", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetUpdateOutput</returns>
+        public async System.Threading.Tasks.Task<TargetUpdateOutput> TargetUpdateGeminiAsync(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<TargetUpdateOutput> localVarResponse = await TargetUpdateGeminiWithHttpInfoAsync(targetUpdateGemini, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateGemini"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetUpdateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<TargetUpdateOutput>> TargetUpdateGeminiWithHttpInfoAsync(TargetUpdateGemini targetUpdateGemini, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'targetUpdateGemini' is set
+            if (targetUpdateGemini == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetUpdateGemini' when calling V2Api->TargetUpdateGemini");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetUpdateGemini;
+
+            localVarRequestOptions.Operation = "V2Api.TargetUpdateGemini";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<TargetUpdateOutput>("/target-update-gemini", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetUpdateGemini", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="targetUpdateGithub"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>TargetUpdateOutput</returns>
@@ -95904,6 +96522,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("TargetUpdateLinked", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TargetUpdateOutput</returns>
+        public TargetUpdateOutput TargetUpdateOpenAI(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<TargetUpdateOutput> localVarResponse = TargetUpdateOpenAIWithHttpInfo(targetUpdateOpenAI);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TargetUpdateOutput</returns>
+        public akeyless.Client.ApiResponse<TargetUpdateOutput> TargetUpdateOpenAIWithHttpInfo(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0)
+        {
+            // verify the required parameter 'targetUpdateOpenAI' is set
+            if (targetUpdateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetUpdateOpenAI' when calling V2Api->TargetUpdateOpenAI");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetUpdateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.TargetUpdateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<TargetUpdateOutput>("/target-update-openai", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetUpdateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of TargetUpdateOutput</returns>
+        public async System.Threading.Tasks.Task<TargetUpdateOutput> TargetUpdateOpenAIAsync(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<TargetUpdateOutput> localVarResponse = await TargetUpdateOpenAIWithHttpInfoAsync(targetUpdateOpenAI, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="targetUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (TargetUpdateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<TargetUpdateOutput>> TargetUpdateOpenAIWithHttpInfoAsync(TargetUpdateOpenAI targetUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'targetUpdateOpenAI' is set
+            if (targetUpdateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'targetUpdateOpenAI' when calling V2Api->TargetUpdateOpenAI");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = targetUpdateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.TargetUpdateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<TargetUpdateOutput>("/target-update-openai", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("TargetUpdateOpenAI", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

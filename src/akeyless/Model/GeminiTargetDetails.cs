@@ -27,41 +27,41 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// AzureLogAnalyticsForwardingConfig
+    /// GeminiTargetDetails defines details related to connecting to a Google Gemini provider
     /// </summary>
-    [DataContract(Name = "AzureLogAnalyticsForwardingConfig")]
-    public partial class AzureLogAnalyticsForwardingConfig : IValidatableObject
+    [DataContract(Name = "GeminiTargetDetails")]
+    public partial class GeminiTargetDetails : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="AzureLogAnalyticsForwardingConfig" /> class.
+        /// Initializes a new instance of the <see cref="GeminiTargetDetails" /> class.
         /// </summary>
-        /// <param name="azureEnableBatch">azureEnableBatch.</param>
-        /// <param name="azureWorkspaceId">azureWorkspaceId.</param>
-        /// <param name="azureWorkspaceKey">azureWorkspaceKey.</param>
-        public AzureLogAnalyticsForwardingConfig(string azureEnableBatch = default(string), string azureWorkspaceId = default(string), string azureWorkspaceKey = default(string))
+        /// <param name="apiKey">apiKey.</param>
+        /// <param name="baseUrl">baseUrl.</param>
+        /// <param name="model">model.</param>
+        public GeminiTargetDetails(string apiKey = default(string), string baseUrl = default(string), string model = default(string))
         {
-            this.AzureEnableBatch = azureEnableBatch;
-            this.AzureWorkspaceId = azureWorkspaceId;
-            this.AzureWorkspaceKey = azureWorkspaceKey;
+            this.ApiKey = apiKey;
+            this.BaseUrl = baseUrl;
+            this.Model = model;
         }
 
         /// <summary>
-        /// Gets or Sets AzureEnableBatch
+        /// Gets or Sets ApiKey
         /// </summary>
-        [DataMember(Name = "azure_enable_batch", EmitDefaultValue = false)]
-        public string AzureEnableBatch { get; set; }
+        [DataMember(Name = "api_key", EmitDefaultValue = false)]
+        public string ApiKey { get; set; }
 
         /// <summary>
-        /// Gets or Sets AzureWorkspaceId
+        /// Gets or Sets BaseUrl
         /// </summary>
-        [DataMember(Name = "azure_workspace_id", EmitDefaultValue = false)]
-        public string AzureWorkspaceId { get; set; }
+        [DataMember(Name = "base_url", EmitDefaultValue = false)]
+        public string BaseUrl { get; set; }
 
         /// <summary>
-        /// Gets or Sets AzureWorkspaceKey
+        /// Gets or Sets Model
         /// </summary>
-        [DataMember(Name = "azure_workspace_key", EmitDefaultValue = false)]
-        public string AzureWorkspaceKey { get; set; }
+        [DataMember(Name = "model", EmitDefaultValue = false)]
+        public string Model { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -70,10 +70,10 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class AzureLogAnalyticsForwardingConfig {\n");
-            sb.Append("  AzureEnableBatch: ").Append(AzureEnableBatch).Append("\n");
-            sb.Append("  AzureWorkspaceId: ").Append(AzureWorkspaceId).Append("\n");
-            sb.Append("  AzureWorkspaceKey: ").Append(AzureWorkspaceKey).Append("\n");
+            sb.Append("class GeminiTargetDetails {\n");
+            sb.Append("  ApiKey: ").Append(ApiKey).Append("\n");
+            sb.Append("  BaseUrl: ").Append(BaseUrl).Append("\n");
+            sb.Append("  Model: ").Append(Model).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
