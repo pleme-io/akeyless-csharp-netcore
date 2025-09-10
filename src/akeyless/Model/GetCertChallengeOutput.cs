@@ -27,41 +27,25 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// ReverseRBACClient
+    /// GetCertChallengeOutput
     /// </summary>
-    [DataContract(Name = "ReverseRBACClient")]
-    public partial class ReverseRBACClient : IValidatableObject
+    [DataContract(Name = "GetCertChallengeOutput")]
+    public partial class GetCertChallengeOutput : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReverseRBACClient" /> class.
+        /// Initializes a new instance of the <see cref="GetCertChallengeOutput" /> class.
         /// </summary>
-        /// <param name="assocs">assocs.</param>
-        /// <param name="authMethodId">authMethodId.</param>
-        /// <param name="authMethodName">authMethodName.</param>
-        public ReverseRBACClient(List<AuthMethodRoleAssociation> assocs = default(List<AuthMethodRoleAssociation>), long authMethodId = default(long), string authMethodName = default(string))
+        /// <param name="challenge">challenge.</param>
+        public GetCertChallengeOutput(string challenge = default(string))
         {
-            this.Assocs = assocs;
-            this.AuthMethodId = authMethodId;
-            this.AuthMethodName = authMethodName;
+            this.Challenge = challenge;
         }
 
         /// <summary>
-        /// Gets or Sets Assocs
+        /// Gets or Sets Challenge
         /// </summary>
-        [DataMember(Name = "assocs", EmitDefaultValue = false)]
-        public List<AuthMethodRoleAssociation> Assocs { get; set; }
-
-        /// <summary>
-        /// Gets or Sets AuthMethodId
-        /// </summary>
-        [DataMember(Name = "auth_method_id", EmitDefaultValue = false)]
-        public long AuthMethodId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets AuthMethodName
-        /// </summary>
-        [DataMember(Name = "auth_method_name", EmitDefaultValue = false)]
-        public string AuthMethodName { get; set; }
+        [DataMember(Name = "challenge", EmitDefaultValue = false)]
+        public string Challenge { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -70,10 +54,8 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ReverseRBACClient {\n");
-            sb.Append("  Assocs: ").Append(Assocs).Append("\n");
-            sb.Append("  AuthMethodId: ").Append(AuthMethodId).Append("\n");
-            sb.Append("  AuthMethodName: ").Append(AuthMethodName).Append("\n");
+            sb.Append("class GetCertChallengeOutput {\n");
+            sb.Append("  Challenge: ").Append(Challenge).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

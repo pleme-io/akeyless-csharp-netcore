@@ -6349,6 +6349,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GetCertChallengeOutput</returns>
+        GetCertChallengeOutput GetCertChallenge(GetCertChallenge getCertChallenge, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GetCertChallengeOutput</returns>
+        ApiResponse<GetCertChallengeOutput> GetCertChallengeWithHttpInfo(GetCertChallenge getCertChallenge, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="getCertificateValue"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>GetCertificateValueOutput</returns>
@@ -19428,6 +19448,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AuthMethod)</returns>
         System.Threading.Tasks.Task<ApiResponse<AuthMethod>> GetAuthMethodWithHttpInfoAsync(GetAuthMethod getAuthMethod, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GetCertChallengeOutput</returns>
+        System.Threading.Tasks.Task<GetCertChallengeOutput> GetCertChallengeAsync(GetCertChallenge getCertChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GetCertChallengeOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetCertChallengeOutput>> GetCertChallengeWithHttpInfoAsync(GetCertChallenge getCertChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -72058,6 +72103,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("GetAuthMethod", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>GetCertChallengeOutput</returns>
+        public GetCertChallengeOutput GetCertChallenge(GetCertChallenge getCertChallenge, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<GetCertChallengeOutput> localVarResponse = GetCertChallengeWithHttpInfo(getCertChallenge);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of GetCertChallengeOutput</returns>
+        public akeyless.Client.ApiResponse<GetCertChallengeOutput> GetCertChallengeWithHttpInfo(GetCertChallenge getCertChallenge, int operationIndex = 0)
+        {
+            // verify the required parameter 'getCertChallenge' is set
+            if (getCertChallenge == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'getCertChallenge' when calling V2Api->GetCertChallenge");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = getCertChallenge;
+
+            localVarRequestOptions.Operation = "V2Api.GetCertChallenge";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<GetCertChallengeOutput>("/get-cert-challenge", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GetCertChallenge", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GetCertChallengeOutput</returns>
+        public async System.Threading.Tasks.Task<GetCertChallengeOutput> GetCertChallengeAsync(GetCertChallenge getCertChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<GetCertChallengeOutput> localVarResponse = await GetCertChallengeWithHttpInfoAsync(getCertChallenge, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="getCertChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GetCertChallengeOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<GetCertChallengeOutput>> GetCertChallengeWithHttpInfoAsync(GetCertChallenge getCertChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'getCertChallenge' is set
+            if (getCertChallenge == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'getCertChallenge' when calling V2Api->GetCertChallenge");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = getCertChallenge;
+
+            localVarRequestOptions.Operation = "V2Api.GetCertChallenge";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GetCertChallengeOutput>("/get-cert-challenge", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("GetCertChallenge", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;

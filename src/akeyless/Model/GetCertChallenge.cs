@@ -27,41 +27,44 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// ReverseRBACClient
+    /// GetCertChallenge is a command that gets a challenge for certificate authentication
     /// </summary>
-    [DataContract(Name = "ReverseRBACClient")]
-    public partial class ReverseRBACClient : IValidatableObject
+    [DataContract(Name = "GetCertChallenge")]
+    public partial class GetCertChallenge : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReverseRBACClient" /> class.
+        /// Initializes a new instance of the <see cref="GetCertChallenge" /> class.
         /// </summary>
-        /// <param name="assocs">assocs.</param>
-        /// <param name="authMethodId">authMethodId.</param>
-        /// <param name="authMethodName">authMethodName.</param>
-        public ReverseRBACClient(List<AuthMethodRoleAssociation> assocs = default(List<AuthMethodRoleAssociation>), long authMethodId = default(long), string authMethodName = default(string))
+        /// <param name="accessId">Access ID.</param>
+        /// <param name="certData">Certificate data encoded in base64. Used if file was not provided..</param>
+        /// <param name="json">Set output format to JSON (default to false).</param>
+        public GetCertChallenge(string accessId = default(string), string certData = default(string), bool json = false)
         {
-            this.Assocs = assocs;
-            this.AuthMethodId = authMethodId;
-            this.AuthMethodName = authMethodName;
+            this.AccessId = accessId;
+            this.CertData = certData;
+            this.Json = json;
         }
 
         /// <summary>
-        /// Gets or Sets Assocs
+        /// Access ID
         /// </summary>
-        [DataMember(Name = "assocs", EmitDefaultValue = false)]
-        public List<AuthMethodRoleAssociation> Assocs { get; set; }
+        /// <value>Access ID</value>
+        [DataMember(Name = "access-id", EmitDefaultValue = false)]
+        public string AccessId { get; set; }
 
         /// <summary>
-        /// Gets or Sets AuthMethodId
+        /// Certificate data encoded in base64. Used if file was not provided.
         /// </summary>
-        [DataMember(Name = "auth_method_id", EmitDefaultValue = false)]
-        public long AuthMethodId { get; set; }
+        /// <value>Certificate data encoded in base64. Used if file was not provided.</value>
+        [DataMember(Name = "cert-data", EmitDefaultValue = false)]
+        public string CertData { get; set; }
 
         /// <summary>
-        /// Gets or Sets AuthMethodName
+        /// Set output format to JSON
         /// </summary>
-        [DataMember(Name = "auth_method_name", EmitDefaultValue = false)]
-        public string AuthMethodName { get; set; }
+        /// <value>Set output format to JSON</value>
+        [DataMember(Name = "json", EmitDefaultValue = true)]
+        public bool Json { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -70,10 +73,10 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class ReverseRBACClient {\n");
-            sb.Append("  Assocs: ").Append(Assocs).Append("\n");
-            sb.Append("  AuthMethodId: ").Append(AuthMethodId).Append("\n");
-            sb.Append("  AuthMethodName: ").Append(AuthMethodName).Append("\n");
+            sb.Append("class GetCertChallenge {\n");
+            sb.Append("  AccessId: ").Append(AccessId).Append("\n");
+            sb.Append("  CertData: ").Append(CertData).Append("\n");
+            sb.Append("  Json: ").Append(Json).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
