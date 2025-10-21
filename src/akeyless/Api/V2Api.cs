@@ -2851,6 +2851,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>DynamicSecretCreateOutput</returns>
+        DynamicSecretCreateOutput DynamicSecretCreateOpenAI(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of DynamicSecretCreateOutput</returns>
+        ApiResponse<DynamicSecretCreateOutput> DynamicSecretCreateOpenAIWithHttpInfo(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="dynamicSecretCreateOracleDb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>DynamicSecretCreateOutput</returns>
@@ -3531,6 +3551,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>DynamicSecretUpdateOutput</returns>
+        DynamicSecretUpdateOutput DynamicSecretUpdateOpenAI(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of DynamicSecretUpdateOutput</returns>
+        ApiResponse<DynamicSecretUpdateOutput> DynamicSecretUpdateOpenAIWithHttpInfo(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="dynamicSecretUpdateOracleDb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>DynamicSecretUpdateOutput</returns>
@@ -3971,6 +4011,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>EventForwarderCreateUpdateOutput</returns>
+        EventForwarderCreateUpdateOutput EventForwarderCreateTeams(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of EventForwarderCreateUpdateOutput</returns>
+        ApiResponse<EventForwarderCreateUpdateOutput> EventForwarderCreateTeamsWithHttpInfo(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="eventForwarderCreateWebhook"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>EventForwarderCreateUpdateOutput</returns>
@@ -4087,6 +4147,26 @@ namespace akeyless.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of EventForwarderCreateUpdateOutput</returns>
         ApiResponse<EventForwarderCreateUpdateOutput> EventForwarderUpdateSlackWithHttpInfo(EventForwarderUpdateSlack eventForwarderUpdateSlack, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>EventForwarderCreateUpdateOutput</returns>
+        EventForwarderCreateUpdateOutput EventForwarderUpdateTeams(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of EventForwarderCreateUpdateOutput</returns>
+        ApiResponse<EventForwarderCreateUpdateOutput> EventForwarderUpdateTeamsWithHttpInfo(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -15082,6 +15162,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of DynamicSecretCreateOutput</returns>
+        System.Threading.Tasks.Task<DynamicSecretCreateOutput> DynamicSecretCreateOpenAIAsync(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (DynamicSecretCreateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DynamicSecretCreateOutput>> DynamicSecretCreateOpenAIWithHttpInfoAsync(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="dynamicSecretCreateOracleDb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -15932,6 +16037,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of DynamicSecretUpdateOutput</returns>
+        System.Threading.Tasks.Task<DynamicSecretUpdateOutput> DynamicSecretUpdateOpenAIAsync(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (DynamicSecretUpdateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DynamicSecretUpdateOutput>> DynamicSecretUpdateOpenAIWithHttpInfoAsync(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="dynamicSecretUpdateOracleDb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -16482,6 +16612,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of EventForwarderCreateUpdateOutput</returns>
+        System.Threading.Tasks.Task<EventForwarderCreateUpdateOutput> EventForwarderCreateTeamsAsync(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (EventForwarderCreateUpdateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<EventForwarderCreateUpdateOutput>> EventForwarderCreateTeamsWithHttpInfoAsync(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="eventForwarderCreateWebhook"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -16625,6 +16780,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (EventForwarderCreateUpdateOutput)</returns>
         System.Threading.Tasks.Task<ApiResponse<EventForwarderCreateUpdateOutput>> EventForwarderUpdateSlackWithHttpInfoAsync(EventForwarderUpdateSlack eventForwarderUpdateSlack, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of EventForwarderCreateUpdateOutput</returns>
+        System.Threading.Tasks.Task<EventForwarderCreateUpdateOutput> EventForwarderUpdateTeamsAsync(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (EventForwarderCreateUpdateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<EventForwarderCreateUpdateOutput>> EventForwarderUpdateTeamsWithHttpInfoAsync(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -46642,6 +46822,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>DynamicSecretCreateOutput</returns>
+        public DynamicSecretCreateOutput DynamicSecretCreateOpenAI(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<DynamicSecretCreateOutput> localVarResponse = DynamicSecretCreateOpenAIWithHttpInfo(dynamicSecretCreateOpenAI);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of DynamicSecretCreateOutput</returns>
+        public akeyless.Client.ApiResponse<DynamicSecretCreateOutput> DynamicSecretCreateOpenAIWithHttpInfo(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0)
+        {
+            // verify the required parameter 'dynamicSecretCreateOpenAI' is set
+            if (dynamicSecretCreateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'dynamicSecretCreateOpenAI' when calling V2Api->DynamicSecretCreateOpenAI");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = dynamicSecretCreateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.DynamicSecretCreateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<DynamicSecretCreateOutput>("/dynamic-secret-create-openai", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("DynamicSecretCreateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of DynamicSecretCreateOutput</returns>
+        public async System.Threading.Tasks.Task<DynamicSecretCreateOutput> DynamicSecretCreateOpenAIAsync(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<DynamicSecretCreateOutput> localVarResponse = await DynamicSecretCreateOpenAIWithHttpInfoAsync(dynamicSecretCreateOpenAI, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (DynamicSecretCreateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<DynamicSecretCreateOutput>> DynamicSecretCreateOpenAIWithHttpInfoAsync(DynamicSecretCreateOpenAI dynamicSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'dynamicSecretCreateOpenAI' is set
+            if (dynamicSecretCreateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'dynamicSecretCreateOpenAI' when calling V2Api->DynamicSecretCreateOpenAI");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = dynamicSecretCreateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.DynamicSecretCreateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<DynamicSecretCreateOutput>("/dynamic-secret-create-openai", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("DynamicSecretCreateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="dynamicSecretCreateOracleDb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>DynamicSecretCreateOutput</returns>
@@ -51590,6 +51916,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>DynamicSecretUpdateOutput</returns>
+        public DynamicSecretUpdateOutput DynamicSecretUpdateOpenAI(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<DynamicSecretUpdateOutput> localVarResponse = DynamicSecretUpdateOpenAIWithHttpInfo(dynamicSecretUpdateOpenAI);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of DynamicSecretUpdateOutput</returns>
+        public akeyless.Client.ApiResponse<DynamicSecretUpdateOutput> DynamicSecretUpdateOpenAIWithHttpInfo(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0)
+        {
+            // verify the required parameter 'dynamicSecretUpdateOpenAI' is set
+            if (dynamicSecretUpdateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'dynamicSecretUpdateOpenAI' when calling V2Api->DynamicSecretUpdateOpenAI");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = dynamicSecretUpdateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.DynamicSecretUpdateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<DynamicSecretUpdateOutput>("/dynamic-secret-update-openai", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("DynamicSecretUpdateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of DynamicSecretUpdateOutput</returns>
+        public async System.Threading.Tasks.Task<DynamicSecretUpdateOutput> DynamicSecretUpdateOpenAIAsync(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<DynamicSecretUpdateOutput> localVarResponse = await DynamicSecretUpdateOpenAIWithHttpInfoAsync(dynamicSecretUpdateOpenAI, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dynamicSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (DynamicSecretUpdateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<DynamicSecretUpdateOutput>> DynamicSecretUpdateOpenAIWithHttpInfoAsync(DynamicSecretUpdateOpenAI dynamicSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'dynamicSecretUpdateOpenAI' is set
+            if (dynamicSecretUpdateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'dynamicSecretUpdateOpenAI' when calling V2Api->DynamicSecretUpdateOpenAI");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = dynamicSecretUpdateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.DynamicSecretUpdateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<DynamicSecretUpdateOutput>("/dynamic-secret-update-openai", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("DynamicSecretUpdateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="dynamicSecretUpdateOracleDb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>DynamicSecretUpdateOutput</returns>
@@ -54802,6 +55274,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>EventForwarderCreateUpdateOutput</returns>
+        public EventForwarderCreateUpdateOutput EventForwarderCreateTeams(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput> localVarResponse = EventForwarderCreateTeamsWithHttpInfo(eventForwarderCreateTeams);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of EventForwarderCreateUpdateOutput</returns>
+        public akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput> EventForwarderCreateTeamsWithHttpInfo(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0)
+        {
+            // verify the required parameter 'eventForwarderCreateTeams' is set
+            if (eventForwarderCreateTeams == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'eventForwarderCreateTeams' when calling V2Api->EventForwarderCreateTeams");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = eventForwarderCreateTeams;
+
+            localVarRequestOptions.Operation = "V2Api.EventForwarderCreateTeams";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<EventForwarderCreateUpdateOutput>("/event-forwarder-create-teams", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("EventForwarderCreateTeams", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of EventForwarderCreateUpdateOutput</returns>
+        public async System.Threading.Tasks.Task<EventForwarderCreateUpdateOutput> EventForwarderCreateTeamsAsync(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput> localVarResponse = await EventForwarderCreateTeamsWithHttpInfoAsync(eventForwarderCreateTeams, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderCreateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (EventForwarderCreateUpdateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput>> EventForwarderCreateTeamsWithHttpInfoAsync(EventForwarderCreateTeams eventForwarderCreateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'eventForwarderCreateTeams' is set
+            if (eventForwarderCreateTeams == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'eventForwarderCreateTeams' when calling V2Api->EventForwarderCreateTeams");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = eventForwarderCreateTeams;
+
+            localVarRequestOptions.Operation = "V2Api.EventForwarderCreateTeams";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<EventForwarderCreateUpdateOutput>("/event-forwarder-create-teams", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("EventForwarderCreateTeams", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="eventForwarderCreateWebhook"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>EventForwarderCreateUpdateOutput</returns>
@@ -55665,6 +56283,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("EventForwarderUpdateSlack", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>EventForwarderCreateUpdateOutput</returns>
+        public EventForwarderCreateUpdateOutput EventForwarderUpdateTeams(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput> localVarResponse = EventForwarderUpdateTeamsWithHttpInfo(eventForwarderUpdateTeams);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of EventForwarderCreateUpdateOutput</returns>
+        public akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput> EventForwarderUpdateTeamsWithHttpInfo(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0)
+        {
+            // verify the required parameter 'eventForwarderUpdateTeams' is set
+            if (eventForwarderUpdateTeams == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'eventForwarderUpdateTeams' when calling V2Api->EventForwarderUpdateTeams");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = eventForwarderUpdateTeams;
+
+            localVarRequestOptions.Operation = "V2Api.EventForwarderUpdateTeams";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<EventForwarderCreateUpdateOutput>("/event-forwarder-update-teams", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("EventForwarderUpdateTeams", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of EventForwarderCreateUpdateOutput</returns>
+        public async System.Threading.Tasks.Task<EventForwarderCreateUpdateOutput> EventForwarderUpdateTeamsAsync(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput> localVarResponse = await EventForwarderUpdateTeamsWithHttpInfoAsync(eventForwarderUpdateTeams, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="eventForwarderUpdateTeams"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (EventForwarderCreateUpdateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<EventForwarderCreateUpdateOutput>> EventForwarderUpdateTeamsWithHttpInfoAsync(EventForwarderUpdateTeams eventForwarderUpdateTeams, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'eventForwarderUpdateTeams' is set
+            if (eventForwarderUpdateTeams == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'eventForwarderUpdateTeams' when calling V2Api->EventForwarderUpdateTeams");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = eventForwarderUpdateTeams;
+
+            localVarRequestOptions.Operation = "V2Api.EventForwarderUpdateTeams";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<EventForwarderCreateUpdateOutput>("/event-forwarder-update-teams", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("EventForwarderUpdateTeams", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
