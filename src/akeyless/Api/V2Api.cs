@@ -28,6 +28,109 @@ namespace akeyless.Api
     {
         #region Synchronous Operations
         /// <summary>
+        /// Create a new custom field.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>AccountCustomFieldCreateOutput</returns>
+        AccountCustomFieldCreateOutput AccountCustomFieldCreate(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0);
+
+        /// <summary>
+        /// Create a new custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of AccountCustomFieldCreateOutput</returns>
+        ApiResponse<AccountCustomFieldCreateOutput> AccountCustomFieldCreateWithHttpInfo(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0);
+        /// <summary>
+        /// Delete a custom field.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        Object AccountCustomFieldDelete(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0);
+
+        /// <summary>
+        /// Delete a custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> AccountCustomFieldDeleteWithHttpInfo(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0);
+        /// <summary>
+        /// Get an account custom field by ID.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>AccountCustomFieldGetOutput</returns>
+        AccountCustomFieldGetOutput AccountCustomFieldGet(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0);
+
+        /// <summary>
+        /// Get an account custom field by ID.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of AccountCustomFieldGetOutput</returns>
+        ApiResponse<AccountCustomFieldGetOutput> AccountCustomFieldGetWithHttpInfo(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0);
+        /// <summary>
+        /// List all account custom fields.
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        Object AccountCustomFieldList(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0);
+
+        /// <summary>
+        /// List all account custom fields.
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> AccountCustomFieldListWithHttpInfo(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0);
+        /// <summary>
+        /// Update a custom field.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        Object AccountCustomFieldUpdate(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0);
+
+        /// <summary>
+        /// Update a custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        ApiResponse<Object> AccountCustomFieldUpdateWithHttpInfo(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0);
+        /// <summary>
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
@@ -11630,6 +11733,131 @@ namespace akeyless.Api
     public interface IV2ApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
+        /// <summary>
+        /// Create a new custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of AccountCustomFieldCreateOutput</returns>
+        System.Threading.Tasks.Task<AccountCustomFieldCreateOutput> AccountCustomFieldCreateAsync(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Create a new custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (AccountCustomFieldCreateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccountCustomFieldCreateOutput>> AccountCustomFieldCreateWithHttpInfoAsync(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// Delete a custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> AccountCustomFieldDeleteAsync(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Delete a custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AccountCustomFieldDeleteWithHttpInfoAsync(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// Get an account custom field by ID.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of AccountCustomFieldGetOutput</returns>
+        System.Threading.Tasks.Task<AccountCustomFieldGetOutput> AccountCustomFieldGetAsync(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Get an account custom field by ID.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (AccountCustomFieldGetOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccountCustomFieldGetOutput>> AccountCustomFieldGetWithHttpInfoAsync(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// List all account custom fields.
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> AccountCustomFieldListAsync(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// List all account custom fields.
+        /// </summary>
+        /// <remarks>
+        /// Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AccountCustomFieldListWithHttpInfoAsync(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// Update a custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        System.Threading.Tasks.Task<Object> AccountCustomFieldUpdateAsync(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Update a custom field.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> AccountCustomFieldUpdateWithHttpInfoAsync(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -26242,6 +26470,736 @@ namespace akeyless.Api
                 return _exceptionFactory;
             }
             set { _exceptionFactory = value; }
+        }
+
+        /// <summary>
+        /// Create a new custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>AccountCustomFieldCreateOutput</returns>
+        public AccountCustomFieldCreateOutput AccountCustomFieldCreate(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<AccountCustomFieldCreateOutput> localVarResponse = AccountCustomFieldCreateWithHttpInfo(accountCustomFieldCreate);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create a new custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of AccountCustomFieldCreateOutput</returns>
+        public akeyless.Client.ApiResponse<AccountCustomFieldCreateOutput> AccountCustomFieldCreateWithHttpInfo(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0)
+        {
+            // verify the required parameter 'accountCustomFieldCreate' is set
+            if (accountCustomFieldCreate == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldCreate' when calling V2Api->AccountCustomFieldCreate");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldCreate;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldCreate";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<AccountCustomFieldCreateOutput>("/account-custom-field-create", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldCreate", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Create a new custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of AccountCustomFieldCreateOutput</returns>
+        public async System.Threading.Tasks.Task<AccountCustomFieldCreateOutput> AccountCustomFieldCreateAsync(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<AccountCustomFieldCreateOutput> localVarResponse = await AccountCustomFieldCreateWithHttpInfoAsync(accountCustomFieldCreate, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create a new custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldCreate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (AccountCustomFieldCreateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<AccountCustomFieldCreateOutput>> AccountCustomFieldCreateWithHttpInfoAsync(AccountCustomFieldCreate accountCustomFieldCreate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'accountCustomFieldCreate' is set
+            if (accountCustomFieldCreate == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldCreate' when calling V2Api->AccountCustomFieldCreate");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldCreate;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldCreate";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<AccountCustomFieldCreateOutput>("/account-custom-field-create", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldCreate", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Delete a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        public Object AccountCustomFieldDelete(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = AccountCustomFieldDeleteWithHttpInfo(accountCustomFieldDelete);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Delete a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        public akeyless.Client.ApiResponse<Object> AccountCustomFieldDeleteWithHttpInfo(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0)
+        {
+            // verify the required parameter 'accountCustomFieldDelete' is set
+            if (accountCustomFieldDelete == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldDelete' when calling V2Api->AccountCustomFieldDelete");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldDelete;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldDelete";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/account-custom-field-delete", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldDelete", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Delete a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> AccountCustomFieldDeleteAsync(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = await AccountCustomFieldDeleteWithHttpInfoAsync(accountCustomFieldDelete, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Delete a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldDelete"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<Object>> AccountCustomFieldDeleteWithHttpInfoAsync(AccountCustomFieldDelete accountCustomFieldDelete, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'accountCustomFieldDelete' is set
+            if (accountCustomFieldDelete == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldDelete' when calling V2Api->AccountCustomFieldDelete");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldDelete;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldDelete";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/account-custom-field-delete", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldDelete", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Get an account custom field by ID. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>AccountCustomFieldGetOutput</returns>
+        public AccountCustomFieldGetOutput AccountCustomFieldGet(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<AccountCustomFieldGetOutput> localVarResponse = AccountCustomFieldGetWithHttpInfo(accountCustomFieldGet);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get an account custom field by ID. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of AccountCustomFieldGetOutput</returns>
+        public akeyless.Client.ApiResponse<AccountCustomFieldGetOutput> AccountCustomFieldGetWithHttpInfo(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0)
+        {
+            // verify the required parameter 'accountCustomFieldGet' is set
+            if (accountCustomFieldGet == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldGet' when calling V2Api->AccountCustomFieldGet");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldGet;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldGet";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<AccountCustomFieldGetOutput>("/account-custom-field-get", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldGet", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Get an account custom field by ID. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of AccountCustomFieldGetOutput</returns>
+        public async System.Threading.Tasks.Task<AccountCustomFieldGetOutput> AccountCustomFieldGetAsync(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<AccountCustomFieldGetOutput> localVarResponse = await AccountCustomFieldGetWithHttpInfoAsync(accountCustomFieldGet, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get an account custom field by ID. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldGet"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (AccountCustomFieldGetOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<AccountCustomFieldGetOutput>> AccountCustomFieldGetWithHttpInfoAsync(AccountCustomFieldGet accountCustomFieldGet, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'accountCustomFieldGet' is set
+            if (accountCustomFieldGet == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldGet' when calling V2Api->AccountCustomFieldGet");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldGet;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldGet";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<AccountCustomFieldGetOutput>("/account-custom-field-get", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldGet", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// List all account custom fields. Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        public Object AccountCustomFieldList(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = AccountCustomFieldListWithHttpInfo(accountCustomFieldList);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List all account custom fields. Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        public akeyless.Client.ApiResponse<Object> AccountCustomFieldListWithHttpInfo(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0)
+        {
+            // verify the required parameter 'accountCustomFieldList' is set
+            if (accountCustomFieldList == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldList' when calling V2Api->AccountCustomFieldList");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldList;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldList";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/account-custom-field-list", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldList", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// List all account custom fields. Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> AccountCustomFieldListAsync(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = await AccountCustomFieldListWithHttpInfoAsync(accountCustomFieldList, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// List all account custom fields. Returns a list of all custom fields configured for the account, optionally filtered by object and object type.
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldList"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<Object>> AccountCustomFieldListWithHttpInfoAsync(AccountCustomFieldList accountCustomFieldList, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'accountCustomFieldList' is set
+            if (accountCustomFieldList == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldList' when calling V2Api->AccountCustomFieldList");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldList;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldList";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/account-custom-field-list", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldList", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Update a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>Object</returns>
+        public Object AccountCustomFieldUpdate(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = AccountCustomFieldUpdateWithHttpInfo(accountCustomFieldUpdate);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of Object</returns>
+        public akeyless.Client.ApiResponse<Object> AccountCustomFieldUpdateWithHttpInfo(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0)
+        {
+            // verify the required parameter 'accountCustomFieldUpdate' is set
+            if (accountCustomFieldUpdate == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldUpdate' when calling V2Api->AccountCustomFieldUpdate");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldUpdate;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldUpdate";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/account-custom-field-update", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldUpdate", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Update a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Object</returns>
+        public async System.Threading.Tasks.Task<Object> AccountCustomFieldUpdateAsync(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<Object> localVarResponse = await AccountCustomFieldUpdateWithHttpInfoAsync(accountCustomFieldUpdate, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update a custom field. 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="accountCustomFieldUpdate"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Object)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<Object>> AccountCustomFieldUpdateWithHttpInfoAsync(AccountCustomFieldUpdate accountCustomFieldUpdate, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'accountCustomFieldUpdate' is set
+            if (accountCustomFieldUpdate == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'accountCustomFieldUpdate' when calling V2Api->AccountCustomFieldUpdate");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = accountCustomFieldUpdate;
+
+            localVarRequestOptions.Operation = "V2Api.AccountCustomFieldUpdate";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/account-custom-field-update", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("AccountCustomFieldUpdate", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
         }
 
         /// <summary>
