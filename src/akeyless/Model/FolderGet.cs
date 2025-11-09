@@ -27,61 +27,47 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// EncryptWithClassicKey
+    /// folderGet is a command that get folder
     /// </summary>
-    [DataContract(Name = "encryptWithClassicKey")]
-    public partial class EncryptWithClassicKey : IValidatableObject
+    [DataContract(Name = "folderGet")]
+    public partial class FolderGet : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="EncryptWithClassicKey" /> class.
+        /// Initializes a new instance of the <see cref="FolderGet" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected EncryptWithClassicKey() { }
+        protected FolderGet() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="EncryptWithClassicKey" /> class.
+        /// Initializes a new instance of the <see cref="FolderGet" /> class.
         /// </summary>
-        /// <param name="displayId">The name of the key to use in the encryption process (required).</param>
-        /// <param name="ignoreCache">Retrieve the Secret value without checking the Gateway&#39;s cache [true/false]. This flag is only relevant when using the RestAPI (default to &quot;false&quot;).</param>
+        /// <param name="accessibility">for personal password manager (default to &quot;regular&quot;).</param>
         /// <param name="json">Set output format to JSON (default to false).</param>
-        /// <param name="plaintext">Data to be encrypted (required).</param>
+        /// <param name="name">Folder name (required).</param>
         /// <param name="token">Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;).</param>
+        /// <param name="type">type.</param>
         /// <param name="uidToken">The universal identity token, Required only for universal_identity authentication.</param>
-        /// <param name="varVersion">classic key version (required).</param>
-        public EncryptWithClassicKey(string displayId = default(string), string ignoreCache = @"false", bool json = false, string plaintext = default(string), string token = default(string), string uidToken = default(string), int varVersion = default(int))
+        public FolderGet(string accessibility = @"regular", bool json = false, string name = default(string), string token = default(string), string type = default(string), string uidToken = default(string))
         {
-            // to ensure "displayId" is required (not null)
-            if (displayId == null)
+            // to ensure "name" is required (not null)
+            if (name == null)
             {
-                throw new ArgumentNullException("displayId is a required property for EncryptWithClassicKey and cannot be null");
+                throw new ArgumentNullException("name is a required property for FolderGet and cannot be null");
             }
-            this.DisplayId = displayId;
-            // to ensure "plaintext" is required (not null)
-            if (plaintext == null)
-            {
-                throw new ArgumentNullException("plaintext is a required property for EncryptWithClassicKey and cannot be null");
-            }
-            this.Plaintext = plaintext;
-            this.VarVersion = varVersion;
-            // use default value if no "ignoreCache" provided
-            this.IgnoreCache = ignoreCache ?? @"false";
+            this.Name = name;
+            // use default value if no "accessibility" provided
+            this.Accessibility = accessibility ?? @"regular";
             this.Json = json;
             this.Token = token;
+            this.Type = type;
             this.UidToken = uidToken;
         }
 
         /// <summary>
-        /// The name of the key to use in the encryption process
+        /// for personal password manager
         /// </summary>
-        /// <value>The name of the key to use in the encryption process</value>
-        [DataMember(Name = "display-id", IsRequired = true, EmitDefaultValue = true)]
-        public string DisplayId { get; set; }
-
-        /// <summary>
-        /// Retrieve the Secret value without checking the Gateway&#39;s cache [true/false]. This flag is only relevant when using the RestAPI
-        /// </summary>
-        /// <value>Retrieve the Secret value without checking the Gateway&#39;s cache [true/false]. This flag is only relevant when using the RestAPI</value>
-        [DataMember(Name = "ignore-cache", EmitDefaultValue = false)]
-        public string IgnoreCache { get; set; }
+        /// <value>for personal password manager</value>
+        [DataMember(Name = "accessibility", EmitDefaultValue = false)]
+        public string Accessibility { get; set; }
 
         /// <summary>
         /// Set output format to JSON
@@ -91,11 +77,11 @@ namespace akeyless.Model
         public bool Json { get; set; }
 
         /// <summary>
-        /// Data to be encrypted
+        /// Folder name
         /// </summary>
-        /// <value>Data to be encrypted</value>
-        [DataMember(Name = "plaintext", IsRequired = true, EmitDefaultValue = true)]
-        public string Plaintext { get; set; }
+        /// <value>Folder name</value>
+        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
+        public string Name { get; set; }
 
         /// <summary>
         /// Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;)
@@ -105,18 +91,17 @@ namespace akeyless.Model
         public string Token { get; set; }
 
         /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [DataMember(Name = "type", EmitDefaultValue = false)]
+        public string Type { get; set; }
+
+        /// <summary>
         /// The universal identity token, Required only for universal_identity authentication
         /// </summary>
         /// <value>The universal identity token, Required only for universal_identity authentication</value>
         [DataMember(Name = "uid-token", EmitDefaultValue = false)]
         public string UidToken { get; set; }
-
-        /// <summary>
-        /// classic key version
-        /// </summary>
-        /// <value>classic key version</value>
-        [DataMember(Name = "version", IsRequired = true, EmitDefaultValue = true)]
-        public int VarVersion { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -125,14 +110,13 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class EncryptWithClassicKey {\n");
-            sb.Append("  DisplayId: ").Append(DisplayId).Append("\n");
-            sb.Append("  IgnoreCache: ").Append(IgnoreCache).Append("\n");
+            sb.Append("class FolderGet {\n");
+            sb.Append("  Accessibility: ").Append(Accessibility).Append("\n");
             sb.Append("  Json: ").Append(Json).Append("\n");
-            sb.Append("  Plaintext: ").Append(Plaintext).Append("\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Token: ").Append(Token).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  UidToken: ").Append(UidToken).Append("\n");
-            sb.Append("  VarVersion: ").Append(VarVersion).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

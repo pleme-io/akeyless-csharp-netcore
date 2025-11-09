@@ -27,61 +27,62 @@ using OpenAPIDateConverter = akeyless.Client.OpenAPIDateConverter;
 namespace akeyless.Model
 {
     /// <summary>
-    /// CreateESM is a command that creates an External Secrets Manager. [Deprecated: Use command create-usc]
+    /// folderUpdate is a command that updates folder
     /// </summary>
-    [DataContract(Name = "CreateESM")]
-    public partial class CreateESM : IValidatableObject
+    [DataContract(Name = "folderUpdate")]
+    public partial class FolderUpdate : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateESM" /> class.
+        /// Initializes a new instance of the <see cref="FolderUpdate" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CreateESM() { }
+        protected FolderUpdate() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateESM" /> class.
+        /// Initializes a new instance of the <see cref="FolderUpdate" /> class.
         /// </summary>
-        /// <param name="azureKvName">Azure Key Vault name (Relevant only for Azure targets).</param>
+        /// <param name="accessibility">for personal password manager (default to &quot;regular&quot;).</param>
+        /// <param name="addTag">List of the new tags that will be attached to this folder.</param>
         /// <param name="deleteProtection">Protection from accidental deletion of this object [true/false].</param>
-        /// <param name="description">Description of the External Secrets Manager.</param>
-        /// <param name="gcpProjectId">GCP Project ID (Relevant only for GCP targets).</param>
+        /// <param name="description">Description of the object.</param>
         /// <param name="json">Set output format to JSON (default to false).</param>
-        /// <param name="k8sNamespace">K8s namespace (Relevant to Kubernetes targets).</param>
-        /// <param name="name">External Secrets Manager name (required).</param>
-        /// <param name="tags">List of the tags attached to this External Secrets Manager.</param>
-        /// <param name="targetToAssociate">Target External Secrets Manager to connect (required).</param>
+        /// <param name="name">Folder name (required).</param>
+        /// <param name="rmTag">List of the existent tags that will be removed from this folder.</param>
         /// <param name="token">Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;).</param>
+        /// <param name="type">type.</param>
         /// <param name="uidToken">The universal identity token, Required only for universal_identity authentication.</param>
-        public CreateESM(string azureKvName = default(string), string deleteProtection = default(string), string description = default(string), string gcpProjectId = default(string), bool json = false, string k8sNamespace = default(string), string name = default(string), List<string> tags = default(List<string>), string targetToAssociate = default(string), string token = default(string), string uidToken = default(string))
+        public FolderUpdate(string accessibility = @"regular", List<string> addTag = default(List<string>), string deleteProtection = default(string), string description = default(string), bool json = false, string name = default(string), List<string> rmTag = default(List<string>), string token = default(string), string type = default(string), string uidToken = default(string))
         {
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new ArgumentNullException("name is a required property for CreateESM and cannot be null");
+                throw new ArgumentNullException("name is a required property for FolderUpdate and cannot be null");
             }
             this.Name = name;
-            // to ensure "targetToAssociate" is required (not null)
-            if (targetToAssociate == null)
-            {
-                throw new ArgumentNullException("targetToAssociate is a required property for CreateESM and cannot be null");
-            }
-            this.TargetToAssociate = targetToAssociate;
-            this.AzureKvName = azureKvName;
+            // use default value if no "accessibility" provided
+            this.Accessibility = accessibility ?? @"regular";
+            this.AddTag = addTag;
             this.DeleteProtection = deleteProtection;
             this.Description = description;
-            this.GcpProjectId = gcpProjectId;
             this.Json = json;
-            this.K8sNamespace = k8sNamespace;
-            this.Tags = tags;
+            this.RmTag = rmTag;
             this.Token = token;
+            this.Type = type;
             this.UidToken = uidToken;
         }
 
         /// <summary>
-        /// Azure Key Vault name (Relevant only for Azure targets)
+        /// for personal password manager
         /// </summary>
-        /// <value>Azure Key Vault name (Relevant only for Azure targets)</value>
-        [DataMember(Name = "azure-kv-name", EmitDefaultValue = false)]
-        public string AzureKvName { get; set; }
+        /// <value>for personal password manager</value>
+        [DataMember(Name = "accessibility", EmitDefaultValue = false)]
+        public string Accessibility { get; set; }
+
+        /// <summary>
+        /// List of the new tags that will be attached to this folder
+        /// </summary>
+        /// <value>List of the new tags that will be attached to this folder</value>
+        [DataMember(Name = "add-tag", EmitDefaultValue = false)]
+        public List<string> AddTag { get; set; }
 
         /// <summary>
         /// Protection from accidental deletion of this object [true/false]
@@ -91,18 +92,11 @@ namespace akeyless.Model
         public string DeleteProtection { get; set; }
 
         /// <summary>
-        /// Description of the External Secrets Manager
+        /// Description of the object
         /// </summary>
-        /// <value>Description of the External Secrets Manager</value>
+        /// <value>Description of the object</value>
         [DataMember(Name = "description", EmitDefaultValue = false)]
         public string Description { get; set; }
-
-        /// <summary>
-        /// GCP Project ID (Relevant only for GCP targets)
-        /// </summary>
-        /// <value>GCP Project ID (Relevant only for GCP targets)</value>
-        [DataMember(Name = "gcp-project-id", EmitDefaultValue = false)]
-        public string GcpProjectId { get; set; }
 
         /// <summary>
         /// Set output format to JSON
@@ -112,32 +106,18 @@ namespace akeyless.Model
         public bool Json { get; set; }
 
         /// <summary>
-        /// K8s namespace (Relevant to Kubernetes targets)
+        /// Folder name
         /// </summary>
-        /// <value>K8s namespace (Relevant to Kubernetes targets)</value>
-        [DataMember(Name = "k8s-namespace", EmitDefaultValue = false)]
-        public string K8sNamespace { get; set; }
-
-        /// <summary>
-        /// External Secrets Manager name
-        /// </summary>
-        /// <value>External Secrets Manager name</value>
+        /// <value>Folder name</value>
         [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
-        /// List of the tags attached to this External Secrets Manager
+        /// List of the existent tags that will be removed from this folder
         /// </summary>
-        /// <value>List of the tags attached to this External Secrets Manager</value>
-        [DataMember(Name = "tags", EmitDefaultValue = false)]
-        public List<string> Tags { get; set; }
-
-        /// <summary>
-        /// Target External Secrets Manager to connect
-        /// </summary>
-        /// <value>Target External Secrets Manager to connect</value>
-        [DataMember(Name = "target-to-associate", IsRequired = true, EmitDefaultValue = true)]
-        public string TargetToAssociate { get; set; }
+        /// <value>List of the existent tags that will be removed from this folder</value>
+        [DataMember(Name = "rm-tag", EmitDefaultValue = false)]
+        public List<string> RmTag { get; set; }
 
         /// <summary>
         /// Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;)
@@ -145,6 +125,12 @@ namespace akeyless.Model
         /// <value>Authentication token (see &#x60;/auth&#x60; and &#x60;/configure&#x60;)</value>
         [DataMember(Name = "token", EmitDefaultValue = false)]
         public string Token { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [DataMember(Name = "type", EmitDefaultValue = false)]
+        public string Type { get; set; }
 
         /// <summary>
         /// The universal identity token, Required only for universal_identity authentication
@@ -160,17 +146,16 @@ namespace akeyless.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class CreateESM {\n");
-            sb.Append("  AzureKvName: ").Append(AzureKvName).Append("\n");
+            sb.Append("class FolderUpdate {\n");
+            sb.Append("  Accessibility: ").Append(Accessibility).Append("\n");
+            sb.Append("  AddTag: ").Append(AddTag).Append("\n");
             sb.Append("  DeleteProtection: ").Append(DeleteProtection).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
-            sb.Append("  GcpProjectId: ").Append(GcpProjectId).Append("\n");
             sb.Append("  Json: ").Append(Json).Append("\n");
-            sb.Append("  K8sNamespace: ").Append(K8sNamespace).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
-            sb.Append("  Tags: ").Append(Tags).Append("\n");
-            sb.Append("  TargetToAssociate: ").Append(TargetToAssociate).Append("\n");
+            sb.Append("  RmTag: ").Append(RmTag).Append("\n");
             sb.Append("  Token: ").Append(Token).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  UidToken: ").Append(UidToken).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
