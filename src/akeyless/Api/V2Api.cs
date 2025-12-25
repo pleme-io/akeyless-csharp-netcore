@@ -8168,6 +8168,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>RotatedSecretCreateOutput</returns>
+        RotatedSecretCreateOutput RotatedSecretCreateOpenAI(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of RotatedSecretCreateOutput</returns>
+        ApiResponse<RotatedSecretCreateOutput> RotatedSecretCreateOpenAIWithHttpInfo(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="rotatedSecretCreateOracledb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>RotatedSecretCreateOutput</returns>
@@ -8624,6 +8644,26 @@ namespace akeyless.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of RotatedSecretUpdateOutput</returns>
         ApiResponse<RotatedSecretUpdateOutput> RotatedSecretUpdateMysqlWithHttpInfo(RotatedSecretUpdateMysql rotatedSecretUpdateMysql, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>RotatedSecretUpdateOutput</returns>
+        RotatedSecretUpdateOutput RotatedSecretUpdateOpenAI(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of RotatedSecretUpdateOutput</returns>
+        ApiResponse<RotatedSecretUpdateOutput> RotatedSecretUpdateOpenAIWithHttpInfo(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -21989,6 +22029,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of RotatedSecretCreateOutput</returns>
+        System.Threading.Tasks.Task<RotatedSecretCreateOutput> RotatedSecretCreateOpenAIAsync(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (RotatedSecretCreateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RotatedSecretCreateOutput>> RotatedSecretCreateOpenAIWithHttpInfoAsync(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="rotatedSecretCreateOracledb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -22557,6 +22622,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (RotatedSecretUpdateOutput)</returns>
         System.Threading.Tasks.Task<ApiResponse<RotatedSecretUpdateOutput>> RotatedSecretUpdateMysqlWithHttpInfoAsync(RotatedSecretUpdateMysql rotatedSecretUpdateMysql, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of RotatedSecretUpdateOutput</returns>
+        System.Threading.Tasks.Task<RotatedSecretUpdateOutput> RotatedSecretUpdateOpenAIAsync(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (RotatedSecretUpdateOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<RotatedSecretUpdateOutput>> RotatedSecretUpdateOpenAIWithHttpInfoAsync(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -85780,6 +85870,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>RotatedSecretCreateOutput</returns>
+        public RotatedSecretCreateOutput RotatedSecretCreateOpenAI(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<RotatedSecretCreateOutput> localVarResponse = RotatedSecretCreateOpenAIWithHttpInfo(rotatedSecretCreateOpenAI);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of RotatedSecretCreateOutput</returns>
+        public akeyless.Client.ApiResponse<RotatedSecretCreateOutput> RotatedSecretCreateOpenAIWithHttpInfo(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0)
+        {
+            // verify the required parameter 'rotatedSecretCreateOpenAI' is set
+            if (rotatedSecretCreateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'rotatedSecretCreateOpenAI' when calling V2Api->RotatedSecretCreateOpenAI");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = rotatedSecretCreateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.RotatedSecretCreateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<RotatedSecretCreateOutput>("/rotated-secret-create-openai", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("RotatedSecretCreateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of RotatedSecretCreateOutput</returns>
+        public async System.Threading.Tasks.Task<RotatedSecretCreateOutput> RotatedSecretCreateOpenAIAsync(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<RotatedSecretCreateOutput> localVarResponse = await RotatedSecretCreateOpenAIWithHttpInfoAsync(rotatedSecretCreateOpenAI, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretCreateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (RotatedSecretCreateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<RotatedSecretCreateOutput>> RotatedSecretCreateOpenAIWithHttpInfoAsync(RotatedSecretCreateOpenAI rotatedSecretCreateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'rotatedSecretCreateOpenAI' is set
+            if (rotatedSecretCreateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'rotatedSecretCreateOpenAI' when calling V2Api->RotatedSecretCreateOpenAI");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = rotatedSecretCreateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.RotatedSecretCreateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<RotatedSecretCreateOutput>("/rotated-secret-create-openai", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("RotatedSecretCreateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="rotatedSecretCreateOracledb"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>RotatedSecretCreateOutput</returns>
@@ -89125,6 +89361,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("RotatedSecretUpdateMysql", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>RotatedSecretUpdateOutput</returns>
+        public RotatedSecretUpdateOutput RotatedSecretUpdateOpenAI(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<RotatedSecretUpdateOutput> localVarResponse = RotatedSecretUpdateOpenAIWithHttpInfo(rotatedSecretUpdateOpenAI);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of RotatedSecretUpdateOutput</returns>
+        public akeyless.Client.ApiResponse<RotatedSecretUpdateOutput> RotatedSecretUpdateOpenAIWithHttpInfo(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0)
+        {
+            // verify the required parameter 'rotatedSecretUpdateOpenAI' is set
+            if (rotatedSecretUpdateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'rotatedSecretUpdateOpenAI' when calling V2Api->RotatedSecretUpdateOpenAI");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = rotatedSecretUpdateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.RotatedSecretUpdateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<RotatedSecretUpdateOutput>("/rotated-secret-update-openai", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("RotatedSecretUpdateOpenAI", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of RotatedSecretUpdateOutput</returns>
+        public async System.Threading.Tasks.Task<RotatedSecretUpdateOutput> RotatedSecretUpdateOpenAIAsync(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<RotatedSecretUpdateOutput> localVarResponse = await RotatedSecretUpdateOpenAIWithHttpInfoAsync(rotatedSecretUpdateOpenAI, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="rotatedSecretUpdateOpenAI"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (RotatedSecretUpdateOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<RotatedSecretUpdateOutput>> RotatedSecretUpdateOpenAIWithHttpInfoAsync(RotatedSecretUpdateOpenAI rotatedSecretUpdateOpenAI, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'rotatedSecretUpdateOpenAI' is set
+            if (rotatedSecretUpdateOpenAI == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'rotatedSecretUpdateOpenAI' when calling V2Api->RotatedSecretUpdateOpenAI");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = rotatedSecretUpdateOpenAI;
+
+            localVarRequestOptions.Operation = "V2Api.RotatedSecretUpdateOpenAI";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<RotatedSecretUpdateOutput>("/rotated-secret-update-openai", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("RotatedSecretUpdateOpenAI", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
