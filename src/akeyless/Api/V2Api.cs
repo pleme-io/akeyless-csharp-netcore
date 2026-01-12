@@ -854,6 +854,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>CertificateDiscoveryOutput</returns>
+        CertificateDiscoveryOutput CertificateDiscovery(CertificateDiscovery certificateDiscovery, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of CertificateDiscoveryOutput</returns>
+        ApiResponse<CertificateDiscoveryOutput> CertificateDiscoveryWithHttpInfo(CertificateDiscovery certificateDiscovery, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="changeAdminAccountPassword"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>Object</returns>
@@ -12878,6 +12898,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PasswordSecurityInfo)</returns>
         System.Threading.Tasks.Task<ApiResponse<PasswordSecurityInfo>> CalcPasswordSecurityInfoWithHttpInfoAsync(CalcPasswordSecurityInfo calcPasswordSecurityInfo, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of CertificateDiscoveryOutput</returns>
+        System.Threading.Tasks.Task<CertificateDiscoveryOutput> CertificateDiscoveryAsync(CertificateDiscovery certificateDiscovery, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (CertificateDiscoveryOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CertificateDiscoveryOutput>> CertificateDiscoveryWithHttpInfoAsync(CertificateDiscovery certificateDiscovery, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -32719,6 +32764,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("CalcPasswordSecurityInfo", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>CertificateDiscoveryOutput</returns>
+        public CertificateDiscoveryOutput CertificateDiscovery(CertificateDiscovery certificateDiscovery, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<CertificateDiscoveryOutput> localVarResponse = CertificateDiscoveryWithHttpInfo(certificateDiscovery);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of CertificateDiscoveryOutput</returns>
+        public akeyless.Client.ApiResponse<CertificateDiscoveryOutput> CertificateDiscoveryWithHttpInfo(CertificateDiscovery certificateDiscovery, int operationIndex = 0)
+        {
+            // verify the required parameter 'certificateDiscovery' is set
+            if (certificateDiscovery == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'certificateDiscovery' when calling V2Api->CertificateDiscovery");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = certificateDiscovery;
+
+            localVarRequestOptions.Operation = "V2Api.CertificateDiscovery";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<CertificateDiscoveryOutput>("/certificate-discovery", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("CertificateDiscovery", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of CertificateDiscoveryOutput</returns>
+        public async System.Threading.Tasks.Task<CertificateDiscoveryOutput> CertificateDiscoveryAsync(CertificateDiscovery certificateDiscovery, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<CertificateDiscoveryOutput> localVarResponse = await CertificateDiscoveryWithHttpInfoAsync(certificateDiscovery, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="certificateDiscovery"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (CertificateDiscoveryOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<CertificateDiscoveryOutput>> CertificateDiscoveryWithHttpInfoAsync(CertificateDiscovery certificateDiscovery, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'certificateDiscovery' is set
+            if (certificateDiscovery == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'certificateDiscovery' when calling V2Api->CertificateDiscovery");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = certificateDiscovery;
+
+            localVarRequestOptions.Operation = "V2Api.CertificateDiscovery";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<CertificateDiscoveryOutput>("/certificate-discovery", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("CertificateDiscovery", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
