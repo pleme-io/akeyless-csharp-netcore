@@ -11908,6 +11908,26 @@ namespace akeyless.Api
         /// 
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ValidateCertificateChallengeOutput</returns>
+        ValidateCertificateChallengeOutput ValidateCertificateChallenge(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of ValidateCertificateChallengeOutput</returns>
+        ApiResponse<ValidateCertificateChallengeOutput> ValidateCertificateChallengeWithHttpInfo(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="validateToken"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ValidateTokenOutput</returns>
@@ -11924,6 +11944,26 @@ namespace akeyless.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ValidateTokenOutput</returns>
         ApiResponse<ValidateTokenOutput> ValidateTokenWithHttpInfo(ValidateToken validateToken, int operationIndex = 0);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>VaultAddressOutput</returns>
+        VaultAddressOutput VaultAddress(VaultAddress vaultAddress, int operationIndex = 0);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of VaultAddressOutput</returns>
+        ApiResponse<VaultAddressOutput> VaultAddressWithHttpInfo(VaultAddress vaultAddress, int operationIndex = 0);
         /// <summary>
         /// 
         /// </summary>
@@ -26924,6 +26964,31 @@ namespace akeyless.Api
         /// 
         /// </remarks>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ValidateCertificateChallengeOutput</returns>
+        System.Threading.Tasks.Task<ValidateCertificateChallengeOutput> ValidateCertificateChallengeAsync(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (ValidateCertificateChallengeOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ValidateCertificateChallengeOutput>> ValidateCertificateChallengeWithHttpInfoAsync(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="validateToken"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -26942,6 +27007,31 @@ namespace akeyless.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ValidateTokenOutput)</returns>
         System.Threading.Tasks.Task<ApiResponse<ValidateTokenOutput>> ValidateTokenWithHttpInfoAsync(ValidateToken validateToken, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of VaultAddressOutput</returns>
+        System.Threading.Tasks.Task<VaultAddressOutput> VaultAddressAsync(VaultAddress vaultAddress, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (VaultAddressOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<VaultAddressOutput>> VaultAddressWithHttpInfoAsync(VaultAddress vaultAddress, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -113667,6 +113757,152 @@ namespace akeyless.Api
         ///  
         /// </summary>
         /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ValidateCertificateChallengeOutput</returns>
+        public ValidateCertificateChallengeOutput ValidateCertificateChallenge(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<ValidateCertificateChallengeOutput> localVarResponse = ValidateCertificateChallengeWithHttpInfo(validateCertificateChallenge);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of ValidateCertificateChallengeOutput</returns>
+        public akeyless.Client.ApiResponse<ValidateCertificateChallengeOutput> ValidateCertificateChallengeWithHttpInfo(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0)
+        {
+            // verify the required parameter 'validateCertificateChallenge' is set
+            if (validateCertificateChallenge == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'validateCertificateChallenge' when calling V2Api->ValidateCertificateChallenge");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = validateCertificateChallenge;
+
+            localVarRequestOptions.Operation = "V2Api.ValidateCertificateChallenge";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<ValidateCertificateChallengeOutput>("/validate-certificate-challenge", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ValidateCertificateChallenge", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ValidateCertificateChallengeOutput</returns>
+        public async System.Threading.Tasks.Task<ValidateCertificateChallengeOutput> ValidateCertificateChallengeAsync(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<ValidateCertificateChallengeOutput> localVarResponse = await ValidateCertificateChallengeWithHttpInfoAsync(validateCertificateChallenge, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateCertificateChallenge"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (ValidateCertificateChallengeOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<ValidateCertificateChallengeOutput>> ValidateCertificateChallengeWithHttpInfoAsync(ValidateCertificateChallenge validateCertificateChallenge, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'validateCertificateChallenge' is set
+            if (validateCertificateChallenge == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'validateCertificateChallenge' when calling V2Api->ValidateCertificateChallenge");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = validateCertificateChallenge;
+
+            localVarRequestOptions.Operation = "V2Api.ValidateCertificateChallenge";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<ValidateCertificateChallengeOutput>("/validate-certificate-challenge", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ValidateCertificateChallenge", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="validateToken"></param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ValidateTokenOutput</returns>
@@ -113800,6 +114036,152 @@ namespace akeyless.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ValidateToken", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>VaultAddressOutput</returns>
+        public VaultAddressOutput VaultAddress(VaultAddress vaultAddress, int operationIndex = 0)
+        {
+            akeyless.Client.ApiResponse<VaultAddressOutput> localVarResponse = VaultAddressWithHttpInfo(vaultAddress);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of VaultAddressOutput</returns>
+        public akeyless.Client.ApiResponse<VaultAddressOutput> VaultAddressWithHttpInfo(VaultAddress vaultAddress, int operationIndex = 0)
+        {
+            // verify the required parameter 'vaultAddress' is set
+            if (vaultAddress == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'vaultAddress' when calling V2Api->VaultAddress");
+            }
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = vaultAddress;
+
+            localVarRequestOptions.Operation = "V2Api.VaultAddress";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<VaultAddressOutput>("/vault-address", localVarRequestOptions, this.Configuration);
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("VaultAddress", localVarResponse);
+                if (_exception != null)
+                {
+                    throw _exception;
+                }
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of VaultAddressOutput</returns>
+        public async System.Threading.Tasks.Task<VaultAddressOutput> VaultAddressAsync(VaultAddress vaultAddress, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            akeyless.Client.ApiResponse<VaultAddressOutput> localVarResponse = await VaultAddressWithHttpInfoAsync(vaultAddress, operationIndex, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="akeyless.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="vaultAddress"></param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (VaultAddressOutput)</returns>
+        public async System.Threading.Tasks.Task<akeyless.Client.ApiResponse<VaultAddressOutput>> VaultAddressWithHttpInfoAsync(VaultAddress vaultAddress, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'vaultAddress' is set
+            if (vaultAddress == null)
+            {
+                throw new akeyless.Client.ApiException(400, "Missing required parameter 'vaultAddress' when calling V2Api->VaultAddress");
+            }
+
+
+            akeyless.Client.RequestOptions localVarRequestOptions = new akeyless.Client.RequestOptions();
+
+            string[] _contentTypes = new string[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            string[] _accepts = new string[] {
+                "application/json"
+            };
+
+            var localVarContentType = akeyless.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+            }
+
+            var localVarAccept = akeyless.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null)
+            {
+                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+            }
+
+            localVarRequestOptions.Data = vaultAddress;
+
+            localVarRequestOptions.Operation = "V2Api.VaultAddress";
+            localVarRequestOptions.OperationIndex = operationIndex;
+
+
+            // make the HTTP request
+            var localVarResponse = await this.AsynchronousClient.PostAsync<VaultAddressOutput>("/vault-address", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("VaultAddress", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
